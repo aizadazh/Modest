@@ -1,0 +1,26 @@
+{
+  "name": "modest",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aizadazh/Modest.git"
+  },
+  "keywords": [
+    "modest"
+  ],
+  "author": "AizadaZh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aizadazh/Modest/issues"
+  },
+  "homepage": "https://github.com/aizadazh/Modest#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
