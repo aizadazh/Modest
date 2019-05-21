@@ -3,7 +3,7 @@
   padding: 0; }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px; }
 
 .wrapper {
@@ -33,8 +33,59 @@ body {
         color: #a4aead;
         font-family: sans-serif; }
 
-.main {
+.section__first {
   height: 100vh;
   width: 100%;
   background: url("../images/photo1.png") no-repeat;
   background-size: contain; }
+
+.display1 {
+  color: #ffffff;
+  padding-top: 5rem; }
+
+.title-text {
+  color: #ffffff;
+  padding-top: 1.5rem;
+  max-width: calc(100%/1.7); }
+
+.section__second {
+  height: 100vh;
+  width: 100%;
+  background: #ffffff; }
+
+.btn__group {
+  display: flex; }
+  .btn__group .button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent; }
+  .btn__group .btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    border: solid 2px #ffffff;
+    border-radius: 6px;
+    padding: 0.5em 1em;
+    color: #ffffff;
+    background: transparent;
+    width: 120px;
+    height: 50px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    cursor: pointer; }
+    .btn__group .btn:hover {
+      background-color: #23b7a4;
+      border: solid 2px #23b7a4; }
+
+.social-media-icons {
+  display: flex;
+  max-width: calc(100%/4);
+  justify-content: space-between; }
+  .social-media-icons .facebook-icon {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: #c8cdd0; }
