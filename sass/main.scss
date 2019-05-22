@@ -1,4 +1,4 @@
-.section__first{
+.section-first{
     height: 100vh;
     width: 100%;
     background: url("../images/photo1.png") no-repeat;
@@ -8,14 +8,88 @@
         color: $white;
         padding-top: 5rem;                        
     }
-    .title-text{
-        color:$white;
+    .section-first__text{        
         padding-top: 1.5rem;
         max-width: calc(100%/1.7);
     }
-.section__second{
+.section-second{
     height: 100vh;
     width: 100%;
     background: $white;
-  
-} 
+    border-bottom:1px solid $text;
+    .heading{
+        display: flex;
+        justify-content: flex-start;    
+        .heading-element {
+            width: 10px;
+            height: 30px;
+            background-color: $link;            
+        }
+        .display2{                    
+            color: $dark-bg;
+            font-weight: 400;
+            font-size:2.5em; 
+            padding-left: 1.5rem;
+            margin-top: -0.6rem;
+       }
+    }
+    .section-second__main{
+        display: flex;              
+        justify-content: space-between;           
+        .section-second__left-block{
+            width: 64%;                       
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;    
+            .section-second__text-block{
+                display: flex;
+                flex-direction: column;                        
+                
+                .text-block__left {                    
+                    max-width: 90%;
+                    }
+                }
+            }
+        
+        } 
+        .section-second__right-block{
+            width: 36%;
+            height: 600px;           
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+        }
+            .right-block-main {
+                display: flex;                
+                justify-content: space-between;
+                .right-block-element{
+                    width:15%;
+                    width: 50px;
+                    height: 50px;
+                    background-color: $green; 
+                    position: relative;                  
+                    .right-block-element__number {                       
+                        position: absolute;                       
+                        color: $white;                        
+                        margin-left: 35%; 
+                        transform: translateX(-50%);  
+                        margin-top: 50%; 
+                        transform: translateY(-50%);            
+                    }
+                }
+                .right-block-text {
+                    width: 85%;
+                    display: flex;
+                    flex-direction: column;
+                    align-content: space-between;
+                    .display3{
+                        margin-top: -0.2rem;
+                        color: $text;
+                    }
+                    .right-block__text{
+                        max-width: 100%;
+                    }
+                }
+            }
+        
+        } 

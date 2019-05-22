@@ -1,0 +1,21 @@
+.social-media{
+    display: flex;
+    max-width:calc(100%/2);
+    justify-content: space-between; 
+    .social-media__icon {        
+        width: 60px;
+        height: 60px;        
+        background: $bg-icons;
+        position: relative;         
+        .social-media__link{         
+            position: absolute;
+            margin-left: 35%; 
+            transform: translateX(-50%);  
+            margin-top: 50%; 
+            transform: translateY(-50%);
+            
+            
+            }             
+        }
+    }
+
