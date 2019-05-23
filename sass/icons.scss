@@ -2,20 +2,45 @@
     display: flex;
     max-width:calc(100%/2);
     justify-content: space-between; 
+    padding: 3rem 0;
     .social-media__icon {        
-        width: 60px;
-        height: 60px;        
-        background: $bg-icons;
-        position: relative;         
+        width: 4.5em;
+        height: 4.5em;        
+        position: relative;
+        background: $bg-icons;                   
         .social-media__link{         
             position: absolute;
             margin-left: 35%; 
             transform: translateX(-50%);  
             margin-top: 50%; 
-            transform: translateY(-50%);
-            
-            
+            transform: translateY(-50%);           
             }             
         }
     }
+.team-member__social-links {          
+    justify-content: center;
+    position: absolute;
+    top: 35%;
+    left: 30%; 
+    display: none;      
+    .social-media__icon_team-member{
+        background: $team-dark-bg;
+        width: 2.5em;
+        height: 2.5em;            
+        margin-right: 0.1em;
+        position: relative;               
+        &:hover{
+            cursor:pointer;
+            background: $team-member-name; 
+        }        
+        .social-media__link{         
+            position: absolute;
+            margin-left: 30%; 
+            transform: translateX(-50%);  
+            margin-top: 50%; 
+            transform: translateY(-50%);           
+            } 
+
+    } 
+}
 

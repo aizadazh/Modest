@@ -1,0 +1,41 @@
+.section-team{
+    height: 600px;
+    width: 100%;
+    background: $white; 
+    padding: 2.5rem 0;  
+    .section__our-team {
+        display: flex;
+        justify-content: space-between;        
+        .team-member{
+            width: 260px;
+            height: 370px;
+            background-color: $light-bg;
+            display: flex;
+            flex-direction: column; 
+            position: relative;
+            &:hover{
+                background-color: $team-dark-bg;
+                .team-member__social-links{
+                    display: flex;
+                }
+                .team-member-name{
+                    color: $link;
+                }
+                .team-member-position{
+                    color: $link;
+                }
+            }           
+            .team-member-name{
+                color: $team-member-name;
+                font-weight: bold;
+                padding-top: 0.9rem;
+                padding-left: 0.7rem;                
+            }
+            .team-member-position{
+                color: $text;
+                padding-left: 0.7rem;
+                padding-top: 0.2rem;
+            }
+        }
+    }
+}

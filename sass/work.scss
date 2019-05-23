@@ -1,0 +1,43 @@
+.section-work {
+    width: 100%;
+    height: 850px;
+    background: $team-dark-bg;
+    padding: 2.5rem 0; 
+    .section__lovely-work{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(35%, auto);
+        .portfolio-item {
+            position: relative;
+            padding-bottom: 1.5em;
+            .portfolio-plus{
+                position: absolute;
+                top:40%;
+                left:45%; 
+                display: none;               
+            }    
+            &:hover {
+                .portfolio-base {
+                    display: block;
+                }
+                .portfolio-plus{
+                    display: block;
+                }
+        }       
+        .portfolio-base {
+            width: 98.5%;
+            height: 3.5em;
+            background: $pic-base;
+            position: absolute;
+            top:75%;
+            display: none;
+        }
+        .portfolio-text{
+            font-weight: 400;
+            padding-top: 1em;
+            padding-left: 1em;
+            color: $light-bg;
+        }   
+    }
+}
+}

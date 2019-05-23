@@ -1,5 +1,5 @@
 .section-first{
-    height: 100vh;
+    height: 500px;
     width: 100%;
     background: url("../images/photo1.png") no-repeat;
     background-size: contain; 
@@ -12,14 +12,17 @@
         padding-top: 1.5rem;
         max-width: calc(100%/1.7);
     }
-.section-second{
-    height: 100vh;
+.section-modest{
+    height: 500px;
     width: 100%;
     background: $white;
-    border-bottom:1px solid $text;
+    border-bottom:1px solid $link;
+}
     .heading{
         display: flex;
-        justify-content: flex-start;    
+        justify-content: flex-start; 
+        align-content: space-between;
+        padding: 2rem 0;
         .heading-element {
             width: 10px;
             height: 30px;
@@ -34,34 +37,29 @@
        }
     }
     .section-second__main{
-        display: flex;              
-        justify-content: space-between;           
+        display: flex;       
         .section-second__left-block{
             width: 64%;                       
             display: flex;
-            flex-direction: column;
-            align-content: space-between;    
+            flex-direction: column;              
             .section-second__text-block{
                 display: flex;
-                flex-direction: column;                        
-                
+                flex-direction: column;            
                 .text-block__left {                    
                     max-width: 90%;
                     }
                 }
-            }
-        
+            }        
         } 
         .section-second__right-block{
-            width: 36%;
-            height: 600px;           
+            width: 36%;                     
             display: flex;
-            flex-direction: column;
-            align-content: space-between;
+            flex-direction: column;            
         }
             .right-block-main {
                 display: flex;                
                 justify-content: space-between;
+                margin-bottom: 2rem; 
                 .right-block-element{
                     width:15%;
                     width: 50px;
@@ -90,6 +88,5 @@
                         max-width: 100%;
                     }
                 }
-            }
+            }        
         
-        } 
