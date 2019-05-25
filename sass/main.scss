@@ -18,17 +18,17 @@
     background: $white;
     border-bottom:1px solid $link;
 }
-    .heading{
+    .section-title{
         display: flex;
         justify-content: flex-start; 
         align-content: space-between;
         padding: 2rem 0;
-        .heading-element {
+        .section-title__element {
             width: 10px;
             height: 30px;
             background-color: $link;            
         }
-        .display2{                    
+        .section-title__display2{                    
             color: $dark-bg;
             font-weight: 400;
             font-size:2.5em; 
