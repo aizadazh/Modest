@@ -1,0 +1,37 @@
+.dropdown {
+    position: relative;
+      &:hover {
+        &>.dropdown-menu {
+          display: block;
+          animation-name: bounceIn;
+          animation-duration: 1s;
+        }
+    }
+    & > .btn{
+      &:after {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
+      }
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: $white;
+      box-shadow: 0 0 4px #ccc;
+      width: 150px;
+      .dropdown-item {
+        display: block;
+        color: $dgrey;
+      }
+    }
+  }

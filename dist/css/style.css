@@ -7,13 +7,66 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px; }
 
-.wrapper {
-  max-width: 1100px;
-  margin: 0 auto; }
-
 p {
   color: #8d8f92;
   line-height: 150%; }
+
+.wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 2rem; }
+
+.col-1 {
+  width: 8.33333%; }
+
+.col-2 {
+  width: 16.66667%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33333%; }
+
+.col-5 {
+  width: 41.66667%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33333%; }
+
+.col-8 {
+  width: 66.66667%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33333%; }
+
+.col-11 {
+  width: 91.66667%; }
+
+.col-12 {
+  width: 100%; }
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 540px; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 720px; } }
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 960px; } }
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1170px; } }
 
 .header {
   height: 5em;
@@ -38,19 +91,39 @@ p {
         color: #a4aead;
         font-family: sans-serif; }
 
-.section-first {
+.section-banner {
   height: 500px;
   width: 100%;
   background: url("../images/photo1.png") no-repeat;
-  background-size: contain; }
-
-.display1 {
-  color: #ffffff;
-  padding-top: 5rem; }
-
-.section-first__text {
-  padding-top: 1.5rem;
-  max-width: calc(100%/1.7); }
+  background-size: cover; }
+  .section-banner .welcome-text {
+    max-width: 42em;
+    padding-top: 7em; }
+    .section-banner .welcome-text .display1 {
+      color: #ffffff;
+      padding-bottom: 2rem; }
+    .section-banner .welcome-text .welcome-text__text {
+      color: #dcdfe1; }
+  @media screen and (max-width: 576px) {
+    .section-banner .welcome-text {
+      max-width: 25em;
+      padding-top: 2.5em;
+      text-align: center; } }
+  @media screen and (max-width: 768px) {
+    .section-banner .welcome-text {
+      max-width: 28em;
+      padding-top: 6em;
+      text-align: center; } }
+  @media screen and (max-width: 992px) {
+    .section-banner .welcome-text {
+      max-width: 30em;
+      padding-top: 6em;
+      text-align: center; } }
+  @media screen and (max-width: 1200px) {
+    .section-banner .welcome-text {
+      max-width: 30em;
+      padding-top: 6em;
+      text-align: center; } }
 
 .section-modest {
   height: 500px;
@@ -62,7 +135,7 @@ p {
   display: flex;
   justify-content: flex-start;
   align-content: space-between;
-  padding: 2rem 0; }
+  padding: 1.5rem 0; }
   .section-title .section-title__element {
     width: 10px;
     height: 30px;
@@ -126,7 +199,8 @@ p {
       max-width: 100%; }
 
 .btn__group {
-  display: flex; }
+  display: flex;
+  justify-content: flex-start; }
   .btn__group .btn {
     display: inline-block;
     text-align: center;
@@ -215,13 +289,14 @@ p {
       transform: translateY(-50%); }
 
 .section-team {
-  height: 600px;
   width: 100%;
+  height: auto;
   background: #ffffff;
   padding: 2.5rem 0; }
   .section-team .section__our-team {
-    display: flex;
-    justify-content: space-between; }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem; }
     .section-team .section__our-team .team-member {
       width: 260px;
       height: 370px;
@@ -246,6 +321,30 @@ p {
         color: #8d8f92;
         padding-left: 0.7rem;
         padding-top: 0.2rem; }
+  @media screen and (max-width: 576px) {
+    .section-team .section__our-team {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      grid-gap: 1rem; } }
+  @media screen and (max-width: 768px) {
+    .section-team .section__our-team {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4;
+      grid-gap: 1rem; } }
+  @media screen and (max-width: 992px) {
+    .section-team .section__our-team {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4;
+      grid-gap: 1.5rem; } }
+  @media screen and (max-width: 1200px) {
+    .section-team .section__our-team {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 4;
+      grid-gap: 1.5rem; } }
 
 .section-work {
   width: 100%;

@@ -1,0 +1,47 @@
+.section-banner{
+    height: 500px;
+    width: 100%;
+    background: url("../images/photo1.png") no-repeat;
+    background-size: cover; 
+    .welcome-text{
+        max-width: 42em;    
+        padding-top: 7em;         
+        .display1{
+            color: $white; 
+            padding-bottom: 2rem;                                  
+        }
+        .welcome-text__text {
+            color: $main-text;
+        }
+    } 
+
+@media screen and (max-width: 576px){
+    .welcome-text {
+        max-width: 25em;    
+        padding-top: 2.5em; 
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px){
+    .welcome-text {
+        max-width: 28em;    
+        padding-top: 6em;
+        text-align: center; 
+    }
+}
+@media screen and (max-width: 992px){
+    .welcome-text {
+        max-width: 30em;    
+        padding-top: 6em;
+        text-align: center;   
+        }
+    }
+@media screen and (max-width: 1200px){
+    .welcome-text {
+        max-width: 30em;    
+        padding-top: 6em;
+        text-align: center;
+         
+        }
+    }
+}

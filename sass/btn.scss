@@ -1,5 +1,6 @@
 .btn__group{
-    display: flex;   
+    display: flex; 
+    justify-content: flex-start;  
     .btn{
         display: inline-block;
         text-align: center;
@@ -20,7 +21,9 @@
             border: solid 2px $green;
         }        
     }
-}  
+   
+}
+
     .button {
         padding: 0;
         border: none;
@@ -52,5 +55,4 @@
             border: solid 2px $green;
         }        
     }
-}  
-
+}
