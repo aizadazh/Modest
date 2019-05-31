@@ -1,15 +1,20 @@
 .section-work {
     width: 100%;
-    height: 850px;
+    height: auto;
     background: $team-dark-bg;
-    padding: 2.5rem 0; 
+    padding: 2rem;
     .section__lovely-work{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(35%, auto);
+        grid-auto-rows: minmax(20em, auto);
+        grid-gap: 1.5rem;
         .portfolio-item {
-            position: relative;
-            padding-bottom: 1.5em;
+            position: relative;            
+            .portfolio-image {
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
             .portfolio-plus{
                 position: absolute;
                 top:40%;
@@ -39,5 +44,34 @@
             color: $light-bg;
         }   
     }
+}
+@media screen and (max-width: 576px){   
+    .section__lovely-work {
+        display: grid;
+        grid-template-columns: 1fr;        
+        grid-gap: 0.5rem; 
+    }       
+}
+@media screen and (max-width: 768px){   
+    .section__lovely-work{
+        display: grid;
+        grid-template-columns: 1fr;        
+        grid-gap: 0.5rem; 
+    }    
+}
+@media screen and (max-width: 992px){    
+    .section__lovely-work {
+        display: grid;
+        grid-template-columns: 1fr;        
+        grid-gap: 0.5rem;         
+    } 
+      }
+@media screen and (max-width: 1200px){   
+    .section__lovely-work {
+        display: grid;
+        grid-template-columns: 1fr;             
+        grid-gap: 0.5rem;
+    
+    }   
 }
 }

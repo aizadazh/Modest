@@ -16,6 +16,9 @@
     } 
 
 @media screen and (max-width: 576px){
+    .section-banner{
+        height: auto;
+    }
     .welcome-text {
         max-width: 25em;    
         padding-top: 2.5em; 
@@ -23,6 +26,9 @@
     }
 }
 @media screen and (max-width: 768px){
+    .section-banner{
+        height: auto;
+    }
     .welcome-text {
         max-width: 28em;    
         padding-top: 6em;
@@ -30,6 +36,9 @@
     }
 }
 @media screen and (max-width: 992px){
+    .section-banner{
+        height: auto;
+    }
     .welcome-text {
         max-width: 30em;    
         padding-top: 6em;
@@ -37,6 +46,9 @@
         }
     }
 @media screen and (max-width: 1200px){
+    .section-banner{
+        height: auto;
+    }
     .welcome-text {
         max-width: 30em;    
         padding-top: 6em;

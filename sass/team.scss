@@ -2,9 +2,9 @@
     width: 100%;
     height: auto;    
     background: $white; 
-    padding: 2.5rem 0;  
+    padding: 2rem 0;  
     .section__our-team {
-        display: grid;
+        display: grid;        
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;     
         .team-member{
@@ -14,6 +14,11 @@
             display: flex;
             flex-direction: column; 
             position: relative;
+            .team-member-photo{
+                display: block;
+                max-width: 100%;
+                height: auto;
+            }
             &:hover{
                 background-color: $team-dark-bg;
                 .team-member__social-links{
@@ -40,36 +45,33 @@
         }
     }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px){   
     .section__our-team {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
+        grid-template-columns: 1fr;        
         grid-gap: 1rem; 
     }    
 }
 @media screen and (max-width: 768px){
+   
     .section__our-team {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4;
+        grid-template-columns: 1fr;        
         grid-gap: 1rem; 
     }  
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){    
     .section__our-team {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4;
-        grid-gap: 1.5rem; 
+        grid-template-columns: 1fr;        
+        grid-gap: 1rem;         
     } 
     }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px){   
     .section__our-team {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 4;      
-        grid-gap: 1.5rem; 
+        grid-template-columns: 1fr;             
+        grid-gap: 1rem; 
     
     }
 }
