@@ -1,62 +1,48 @@
-.footer {
-    height:auto; 
+.footer{
+    height: auto;
     width:100%;
-    background: $dark-bg; 
-    position: fixed;
-    left: 0;
-    bottom: 0;     
-    .footer-wrapper{
-        display: flex;       
+    background: $dark-bg;
+    padding: 3em 0;
+    color: $white;
+    .footer-content{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
-        .copyright-text{
-            display:flex;
-            justify-content: flex-start;
-            align-content: flex-start;
-        }                    
-        .footer__social-media-icons{
+        .footer-content__copyright{
+            width: 50%;
+        }
+        .footer-content__social-networks{
+            width: 50%;
             display: flex;
-            justify-content: flex-end; 
-            align-items: flex-start;       
-            .footer__social-media-items {
-                padding: 0 1rem;           
-                width:1.5em;
-                height: 1.5em;     
+            justify-content: flex-end;
+            img{              
                 
-                }
+                margin-left:1em;
             }
+        }
     }
-@media screen and (max-width: 576px){          
-    .footer-wrapper{
-        display: flex;  
-        flex-direction:column;
-        align-content: center;                
-    }       
+    @media screen and (max-width:576) {
+        .footer-content{
+            display: flex;
+            flex-direction: column-reverse; 
+            align-content: center;   
+        }       
 }
-@media screen and (max-width: 768px){
-    .footer-wrapper{
-        display: flex;  
-        flex-direction:column;  
-        justify-content: space-between; 
-        align-content: center;
+    @media screen and (max-width: 768px) {
+        .footer-content{
+            display: flex;
+            flex-direction: column-reverse;            
+            align-content: center;
+    }
+       
+    }
+    @media screen and (max-width: 992px){    
+        .footer-content{
+            display: flex;
+            flex-direction: column-reverse;            
+            align-content: center;
     }
 }
-@media screen and (max-width: 992px){    
-    .footer-wrapper{
-        display: flex;  
-        flex-direction:column;  
-        justify-content: space-between; 
-        align-content: center;
-    }
-    
-    }
-@media screen and (max-width: 1170px){   
-    .footer-wrapper{
-        display: flex;  
-        flex-direction:column;  
-        justify-content: space-between; 
-        align-content: center;
-    }       
-    }    
 }
     
 

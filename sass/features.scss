@@ -2,7 +2,14 @@
     height: auto; 
     width: 100%;  
     background: $team-dark-bg;
-    padding: 2.5rem 1rem;   
+    padding: 2.5rem 1rem; 
+    .display2-features{
+        color: $main-text;
+        padding-left: 0.5em;
+        border-left: 0.4em solid $h2;
+        margin: 2em 0;
+        font-size: 1.8em;
+    }  
     .section-features__main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);         
@@ -60,12 +67,5 @@
         }  
         
         }
-    @media screen and (max-width: 1200px){   
-        .section-features__main {
-            display: grid;
-            grid-template-columns: 1fr;          
-            grid-gap: 2rem;    
-        } 
-        
-    }
+ 
 }    

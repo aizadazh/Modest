@@ -3,10 +3,16 @@
     height: auto;
     background: $team-dark-bg;
     padding: 2rem;
+    .display2-features{
+        color: $main-text;
+        padding-left: 0.5em;
+        border-left: 0.4em solid $h2;
+        margin: 2em 0;
+        font-size: 1.8em;
+    }  
     .section__lovely-work{
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(20em, auto);
+        grid-template-columns: repeat(3, 1fr);       
         grid-gap: 1.5rem;
         .portfolio-item {
             position: relative;            
@@ -49,29 +55,22 @@
     .section__lovely-work {
         display: grid;
         grid-template-columns: 1fr;        
-        grid-gap: 0.5rem; 
+        grid-gap: 1rem; 
     }       
 }
 @media screen and (max-width: 768px){   
     .section__lovely-work{
         display: grid;
         grid-template-columns: 1fr;        
-        grid-gap: 0.5rem; 
+        grid-gap: 1rem; 
     }    
 }
 @media screen and (max-width: 992px){    
     .section__lovely-work {
         display: grid;
         grid-template-columns: 1fr;        
-        grid-gap: 0.5rem;         
+        grid-gap: 1rem;         
     } 
       }
-@media screen and (max-width: 1200px){   
-    .section__lovely-work {
-        display: grid;
-        grid-template-columns: 1fr;             
-        grid-gap: 0.5rem;
-    
-    }   
-}
+
 }
