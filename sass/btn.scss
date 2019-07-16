@@ -60,8 +60,7 @@
 .btn__send{
     display: inline-block;
     text-align: center;
-    text-decoration: none;
-    margin: 2px 0;       
+    text-decoration: none;       
     border: solid 2px $green;
     border-radius: 6px;       
     padding: 0.5em 1em;      
@@ -74,7 +73,12 @@
     height: 50px;
     margin-top: 1rem;
     margin-right: 1rem;
-    cursor: pointer;                   
+    cursor: pointer;
+    &:hover {
+        background: $white;
+        border: 1px solid $white;
+        color: $green;                   
+}
 }
 
           

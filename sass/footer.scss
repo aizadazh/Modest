@@ -19,28 +19,7 @@
             }
         }
     }
-    @media screen and (max-width:576) {
-        .footer-content{
-            display: flex;
-            flex-direction: column; 
-            align-content: center;   
-        }       
+  
 }
-    @media screen and (max-width: 768px) {
-        .footer-content{
-            display: flex;
-            flex-direction: column;            
-            align-content: center;
-    }
-       
-    }
-    @media screen and (max-width: 992px){    
-        .footer-content{
-            display: flex;
-            flex-direction: column;            
-            align-content: center;
-    }
-}
-}
-    
+
 
