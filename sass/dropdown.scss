@@ -1,37 +1,115 @@
-.dropdown {
-    position: relative;
-      &:hover {
-        &>.dropdown-menu {
-          display: block;
-          animation-name: bounceIn;
-          animation-duration: 1s;
-        }
-    }
-    & > .btn{
-      &:after {
-        display: inline-block;
-        width: 0;
-        height: 0;
-        margin-left: .255em;
-        vertical-align: .255em;
-        content: "";
-        border-top: .3em solid;
-        border-right: .3em solid transparent;
-        border-bottom: 0;
-        border-left: .3em solid transparent;
-      }
-    }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      background: $white;
-      box-shadow: 0 0 4px #ccc;
-      width: 150px;
-      .dropdown-item {
-        display: block;
-        color: $dgrey;
-      }
+.menu {
+    text-align: right;
+    display: block;
+    padding-top: 1rem;            
+    font-weight: 400;
+    color: $white;
+    display: flex;
+    justify-content: space-around;            
+    width:100%;
+    .menu__links {      
+      display: flex;      
+      margin-top: -1em;
+      .menu__item {
+        list-style-type: none;                
     }
   }
+  
+.menu__icon {
+   display: none;
+   width: 3em;
+   height: 3em;
+   position: relative;
+   cursor: pointer;
+   margin-left: auto;
+}
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 0.35em;
+  width: 100%;
+  background: $white;
+  border-radius: 5px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+.menu__links-item {
+    text-decoration: none;
+    color: $link;
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;   
+    font-size: 1.2em;     
+    padding: 0.5em 1em; 
+    &:hover {
+      color: $green;
+      border-radius: 2px;
+      border: 1px solid $green;
+    }
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
+@media screen and (max-width: 999px) {
+  .menu__icon{
+    display: inline-block;
+  }
+  
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 52px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: $white;
+  }
+}
+}

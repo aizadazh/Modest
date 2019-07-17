@@ -14,12 +14,26 @@
             width: 50%;
             display: flex;
             justify-content: flex-end;
-            img{             
+            img{  
+                          
                 margin-left:1em;
             }
         }
     }
-  
+    @media screen and (max-width: 576px){
+        .footer-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer-content__copyright{
+            width: 80%;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+
+    }
 }
 
 

@@ -64,8 +64,9 @@
         grid-template-columns: 62% 38%;
     } 
     .section-modest__left-block{                                 
-        width: 100%;
-        float: left;                  
+        width: 95%;
+        font-size:0.95em;
+                       
         .section-modest__text-block{
             display: flex;
             flex-direction: column;            
@@ -96,21 +97,22 @@
                     transform: translateY(-50%);            
                 }
             }
-            .right-block-text {             
-                .display3{
-                    margin-top: -0.2rem;                    
-                    color: $text;
-                    font-size: 1.2em;
-                    text-transform: uppercase;
-                    font-family: 'Quattrocento Sans', sans-serif;
-                }
-                .right-block__text{
-                    font-size: 0.9em;
-                    
-                }
+                         
+            .display3{
+                margin-top: -0.2rem;                    
+                color: $text;
+                font-size: 1.2em;
+                text-transform: uppercase;
+                font-family: 'Quattrocento Sans', sans-serif;
+                padding-bottom: 0.5rem;
+            }
+            .right-block__text{
+                font-size: 0.95em;
+                
             }
         }
     }
+
 @media screen and (max-width: 576px){
     .modest-content{
         display: grid;
@@ -160,7 +162,10 @@
     }
 }
 @media screen and (max-width: 992px){
-    
+    .modest-content{
+        display: grid;
+        grid-template-columns: 95%;
+    }
     }
 @media screen and (max-width: 1200px){
     
@@ -169,7 +174,8 @@
 .section-team{    
     height: auto;    
     background: $white; 
-    padding: 1rem; 
+    padding: 1rem;
+    margin-bottom:5rem;
     .section__our-team {
         display: grid;        
         grid-template-columns: repeat(4, 1fr);
@@ -250,7 +256,8 @@
 .section-work {    
     height: auto;
     background: $team-dark-bg;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     .display2-features{
         color: $main-text;
         padding-left: 0.5em;
@@ -263,7 +270,7 @@
         grid-template-columns: repeat(3, 1fr);       
         grid-gap: 1.5rem;
         .portfolio-item {
-            position: relative;            
+            position: relative;                       
             .portfolio-image {
                 display: block;
                 max-width: 100%;
@@ -302,12 +309,13 @@
     }
 }
 @media screen and (max-width: 576px){   
-    .section__lovely-work {
+    .section__lovely-work{
         display: grid;
         grid-template-columns: 1fr;        
         grid-gap: 1rem; 
-    }       
+    }
 }
+      
 @media screen and (max-width: 768px){   
     .section__lovely-work{
         display: grid;
@@ -316,17 +324,18 @@
     }    
 }
 @media screen and (max-width: 992px){    
-    .section__lovely-work {
+    .section__lovely-work{
         display: grid;
         grid-template-columns: 1fr;        
-        grid-gap: 1rem;         
-        }
+        grid-gap: 1rem; 
+    }
     }
 }
 .section-services{
     height: auto;      
     background: $white;
-    padding: 1rem; 
+    padding:1rem;  
+    margin-bottom:5rem; 
     .section-services__main {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -389,7 +398,8 @@
 .section-features{
     height: auto;     
     background: $team-dark-bg;
-    padding: 1rem;     
+    padding: 1rem;  
+    margin-bottom:5rem;   
     .section-features__main {
         display: grid;
         grid-template-columns: repeat(3, 1fr);         
@@ -421,6 +431,7 @@
                 font-size: 1em;
                 text-align: justify; 
                 max-width: 90%;
+                padding-bottom:5rem;
                               
             }    
            
@@ -453,12 +464,12 @@
     .container {
         position: relative;    
         .section-contact__content {            
-            display: grid;
-            grid-template-columns: 1fr 1fr;            
+            display: flex;                   
             padding-top: 2rem;
-            padding-bottom: 2rem;
+            padding-bottom: 2rem;     
             .contact__info{
-                width: 100%;            
+                width: 100%; 
+                height:auto;           
                 .contact-text {    
                     color: $text;
                     width: 95%;
@@ -475,13 +486,12 @@
             .form{
                 width:100%;
                 height:auto;
-                background: $white;
+                background: $white;                
                 margin-top: -10em;
-                padding: 1.5rem;
+                padding: 1rem;
                 .form__data{
                     display: flex;
-                    justify-content: space-between;
-                    
+                    justify-content: space-between;                    
                     .name {
                         max-width: 15rem;
                         margin-bottom: 1.5rem;
@@ -494,7 +504,7 @@
                             font-size: 1rem;
                             }
                         .form__input {
-                            width: 97%;
+                            width: 98%;
                             border: none;
                             border-radius: 0.2em;
                             background-color: $bg-contact;
@@ -533,6 +543,19 @@
                 }
             }
         }
+    @media screen and (max-width: 576px){
+        .section-contact__content {                              
+            flex-direction: column;
+            align-content: space-between;
+        }
+            .contact__info{
+                margin-bottom: 10em;
+                text-align: justify;
+            }
+            .form { 
+                padding:0;     
+            }
+    }
 }
 
 
