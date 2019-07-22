@@ -8,52 +8,37 @@
         padding-top: 7em;         
         .display1{
             color: $white; 
-            padding-bottom: 2rem;                                  
+            padding-bottom: 2rem; 
+            font-size: 2em;                                 
         }
         .welcome-text__text {
             color: $main-text;
         }
     } 
-@media screen and (max-width: 576px){
-    .section-banner{
-        height: auto;
-    }
-    .welcome-text {
-        max-width: 25em;    
-        padding-top: 2.5em; 
-        text-align: center;
-    }
 }
-@media screen and (max-width: 768px){
+@media (max-width: 576px){
     .section-banner{
         height: auto;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
     }
-    .welcome-text {
-        max-width: 28em;    
-        padding-top: 6em;
-        text-align: center; 
-    }
-}
-@media screen and (max-width: 992px){
     .section-banner{
-        height: auto;
-    }
-    .welcome-text {
-        max-width: 30em;    
-        padding-top: 6em;
-        text-align: center;   
+        .welcome-text {
+            max-width: 25em;    
+            padding-top: 2.5em; 
+            text-align: center;
         }
     }
-@media screen and (max-width: 1200px){
     .section-banner{
-        height: auto;
-    }
-    .welcome-text {
-        max-width: 30em;    
-        padding-top: 6em;
-        text-align: center;         
+        .welcome-text{
+            .display1{
+                width:12em;
+                text-align: center;
+                font-size: 1.2em;
+            }
         }
     }
+    
 }
 .section-modest{
     height: auto;   
@@ -65,8 +50,7 @@
     } 
     .section-modest__left-block{                                 
         width: 95%;
-        font-size:0.95em;
-                       
+        font-size:0.95em;                       
         .section-modest__text-block{
             display: flex;
             flex-direction: column;            
@@ -96,8 +80,7 @@
                     margin-top: 50%; 
                     transform: translateY(-50%);            
                 }
-            }
-                         
+            }                         
             .display3{
                 margin-top: -0.2rem;                    
                 color: $text;
@@ -107,12 +90,11 @@
                 padding-bottom: 0.5rem;
             }
             .right-block__text{
-                font-size: 0.95em;
-                
+                font-size: 0.95em;                
             }
         }
     }
-
+}
 @media screen and (max-width: 576px){
     .modest-content{
         display: grid;
@@ -146,30 +128,12 @@
                         font-family: 'Quattrocento Sans', sans-serif;
                     }
                     .right-block__text{
-                        font-size: 0.9em;
-                        
+                        font-size: 0.9em;                        
                     }
                 }
             }
         }
     }
-    
-}
-@media screen and (max-width: 768px){
-    .modest-content{
-        display: grid;
-        grid-template-columns: 95%;
-    }
-}
-@media screen and (max-width: 992px){
-    .modest-content{
-        display: grid;
-        grid-template-columns: 95%;
-    }
-    }
-@media screen and (max-width: 1200px){
-    
-}
 }
 .section-team{    
     height: auto;    
@@ -221,37 +185,13 @@
             }
         }
     }
-
+}
 @media screen and (max-width: 576px){   
     .section__our-team {
         display: grid;
         grid-template-columns: 1fr;        
         grid-gap: 1rem; 
     }    
-}
-@media screen and (max-width: 768px){
-   
-    .section__our-team {
-        display: grid;
-        grid-template-columns: 1fr;        
-        grid-gap: 1rem; 
-    }  
-}
-@media screen and (max-width: 992px){    
-    .section__our-team {
-        display: grid;
-        grid-template-columns: 1fr;        
-        grid-gap: 1rem;         
-    } 
-    }
-@media screen and (max-width: 1200px){   
-    .section__our-team {
-        display: grid;
-        grid-template-columns: 1fr;             
-        grid-gap: 1rem; 
-    
-    }
-}
 }
 .section-work {    
     height: auto;
@@ -308,29 +248,14 @@
         }   
     }
 }
+}
 @media screen and (max-width: 576px){   
     .section__lovely-work{
         display: grid;
         grid-template-columns: 1fr;        
         grid-gap: 1rem; 
     }
-}
-      
-@media screen and (max-width: 768px){   
-    .section__lovely-work{
-        display: grid;
-        grid-template-columns: 1fr;        
-        grid-gap: 1rem; 
-    }    
-}
-@media screen and (max-width: 992px){    
-    .section__lovely-work{
-        display: grid;
-        grid-template-columns: 1fr;        
-        grid-gap: 1rem; 
-    }
-    }
-}
+} 
 .section-services{
     height: auto;      
     background: $white;
@@ -355,46 +280,19 @@
             }  
             .text{
                 text-align: center;
-                max-width: 95%;
-                
-            }    
-           
+                max-width: 95%;                
+            }          
         }
     }
-    @media screen and (max-width: 576px){          
-        .section-services__main {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;  
-            grid-gap: 1rem;  
-        }             
-    }
-    @media screen and (max-width: 768px){
-        .section-services__main {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;  
-            grid-gap: 1rem;          
-            
-        }   
-    }
-    @media screen and (max-width: 992px){    
-        .section-services__main {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;  
-            grid-gap: 1rem;  
-        }   
-        }
-    @media screen and (max-width: 1200px){   
-        .section-services__main {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-auto-rows: auto;  
-            grid-gap: 1rem;  
-        } 
-    } 
 }
+@media screen and (max-width: 576px){          
+    .section-services__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;  
+        grid-gap: 1rem;  
+    }             
+} 
 .section-features{
     height: auto;     
     background: $team-dark-bg;
@@ -422,7 +320,7 @@
                 padding-bottom: 1.2rem;
                 color: $main-text;
                 font-size: 1em;
-                font-weight: 400;
+                font-weight: 600;
                 text-transform: uppercase;
                 font-family: 'Quattrocento Sans', sans-serif;
             }                            
@@ -431,34 +329,17 @@
                 font-size: 1em;
                 text-align: justify; 
                 max-width: 90%;
-                padding-bottom:5rem;
-                              
-            }    
-           
+                padding-bottom:5rem;                              
+            }               
         }
     }
-    @media screen and (max-width: 576px){          
-        .section-features__main {
-            display: grid;
-            grid-template-columns: 1fr;          
-            grid-gap: 2rem;    
-        }   
-                    
-    }
-    @media screen and (max-width: 768px){
-        .section-features__main {
-            display: grid;
-            grid-template-columns: 1fr;          
-            grid-gap: 2rem;    
-        }   
-    }
-    @media screen and (max-width: 992px){    
-        .section-features__main {
-            display: grid;
-            grid-template-columns: 1fr;          
-            grid-gap: 2rem;    
-        }          
-    } 
+}
+@media screen and (max-width: 576px){          
+    .section-features__main {
+        display: grid;
+        grid-template-columns: 1fr;          
+        grid-gap: 2rem;    
+    }                
 } 
 .section-contact {
     .container {
@@ -492,8 +373,7 @@
                 .form__data{
                     display: flex;
                     justify-content: space-between;                    
-                    .name {
-                        max-width: 15rem;
+                    .name {                       
                         margin-bottom: 1.5rem;
                         .form__label {
                             text-transform: uppercase;
@@ -503,13 +383,19 @@
                             margin-bottom: 0.625rem;
                             font-size: 1rem;
                             }
+                        input {
+                            padding-left: 1rem;
+                            font-style: italic;
+                            color: $text;
+                            
+                        }
                         .form__input {
-                            width: 98%;
+                            width: 98%;                           
                             border: none;
                             border-radius: 0.2em;
                             background-color: $bg-contact;
                             height: 2.75rem;
-                            padding-left: 1rem;
+                           
                             font-size: 1rem;
                             outline: none;
                             box-sizing: border-box;
@@ -543,21 +429,21 @@
                 }
             }
         }
-    @media screen and (max-width: 576px){
-        .section-contact__content {                              
-            flex-direction: column;
-            align-content: space-between;
-        }
-            .contact__info{
-                margin-bottom: 10em;
-                text-align: justify;
-            }
-            .form { 
-                padding:0;     
-            }
-    }
 }
-
-
-
-
+@media screen and (max-width: 576px){
+    .section-contact__content {                              
+        flex-direction: column;
+        align-content: space-between;
+    }
+    .contact__info{
+        margin-bottom: 10em;
+        text-align: justify;
+    }
+    .form { 
+        padding:0; 
+        float: left;    
+    }
+    .form__data{
+        flex-direction: column;
+    }          
+}
