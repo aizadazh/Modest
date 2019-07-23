@@ -336,7 +336,7 @@
         }
     }
 }    
-@media (max-width: 576px){
+@media (min-width:320px) and (max-width: 576px){
     .section-banner{
         height: auto;
         padding-bottom: 5rem;
@@ -405,6 +405,118 @@
         .section-features__main {
             display: grid;
             grid-template-columns: 1fr;          
+        }   
+    }
+    .section-contact{        
+        .section-contact__content {                              
+            flex-direction: column;
+            align-content: space-between;
+            }                
+        }
+    .section-contact{        
+        .section-contact__content {
+            .contact__info{
+                margin-bottom: 10em;
+                text-align: justify;
+            }
+        }        
+    }
+    .section-contact{  
+        .container{      
+            .section-contact__content {
+                .form { 
+                    padding: 0;                        
+                }
+            }
+        }        
+    }
+    .section-contact{    
+        .section-contact__content {
+            .form { 
+                .form__data{
+                    flex-direction: column;
+                    .form__input{
+                        font-size: 1rem;
+                    }
+                }          
+            }
+        }    
+    }    
+
+}
+@media (min-width:577px) and (max-width: 800px){
+    .section-banner{
+        height: auto;
+        padding-bottom: 5rem;
+        padding-top: 5rem;
+    }
+    .section-banner{
+        .welcome-text {
+            max-width: 25em;    
+            padding-top: 2.5em; 
+            text-align: center;
+        }
+    }
+    .section-banner{
+        .welcome-text{
+            .display1{
+                width:20em;
+                text-align: center;
+                font-size: 1.3em;
+            }
+        }
+    }    
+    .section-modest{
+        .modest-content{
+            display: grid;
+            grid-template-columns: 95%;
+        }
+    }
+    .section-modest{
+        .section-modest__right-block{      
+            grid-template-rows: auto auto auto;  
+            .right-block-main {                              
+                grid-template-columns: 20% 80%;
+                padding-bottom: 2rem;              
+                .right-block-element{                                   
+                    width: 3.5em;
+                    height: 3.5em;
+                    background-color: $green; 
+                    position: relative;         
+                }
+            }
+        }
+    }
+    .section-team{
+        .section__our-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr;        
+        grid-gap: 1rem; 
+        justify-items: center;  
+    } 
+}
+    .section-work{
+        .section__lovely-work{
+            display: grid;
+            grid-template-columns: 1fr 1fr;        
+            grid-gap: 1rem; 
+            justify-items: center;  
+        }
+    }
+    .section-services{
+        .section-services__main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: auto;  
+            grid-gap: 1rem;  
+            justify-items: center;  
+        } 
+    }
+    .section-features{
+        .section-features__main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;  
+            justify-items: center;        
         }   
     }
     .section-contact{        
