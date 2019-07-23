@@ -20,24 +20,32 @@ a{
     font-size: 1.8em;
     text-transform: uppercase;
 }
-@media screen and (max-width: 576px){
-    .display2{
-        font-size: 1.3em;
-    }
-}
-
 .display2__dark{
     color: $main-text;
     padding-left: 0.5em;
     border-left: 0.4em solid $h2;
-    margin: 2em 0;
-    
-}
+    margin: 2em 0;        
+    }
 .display2__light{
     color: $pic-base;
     padding-left: 0.5em;
     border-left: 0.4em solid $light-bg;
     margin: 2em 0; 
-     
-   
-}
+    }  
+@media (min-width:320px) and (max-width: 576px){
+    .display2{
+        font-size: 1.3em;
+    }
+    .display2__dark{
+        color: $main-text;
+        padding-left: 0.5em;
+        border-left: 0.4em solid $h2;
+        margin: 2em 0;        
+        }
+    .display2__light{
+        color: $pic-base;
+        padding-left: 0.5em;
+        border-left: 0.4em solid $light-bg;
+        margin: 2em 0; 
+        }      
+    }
