@@ -24,14 +24,10 @@
     padding: 0.5em;
     &:hover {
       color: $green;
-      border: 1px solid $green;
-     
+      border: 1px solid $green;     
     }
   }
 }
-
-
-
 #burger {
   width: 35px;
   height: 35px;
@@ -70,4 +66,31 @@
     }
   }
   
+  }
+  @media (min-width:577px) and (max-width: 992px){
+    #nav {
+      display: flex;
+      flex-direction: column;
+      background: $dark-bg;
+      z-index: 1;
+    
+    }
+    #nav > li {
+        display: none;
+    }
+    
+    #burger {
+        display: inline-block;
+    }  
+    #nav:hover #burger {
+        display: none;
+    }  
+    #nav:hover >li {
+        display: block;     
+    }
+    #nav{
+      .menu-item {
+        padding-top: 15em;
+      }
+    }
   }
