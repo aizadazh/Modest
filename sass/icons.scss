@@ -1,7 +1,8 @@
 .social-media{
     display: flex;    
     justify-content: flex-start; 
-    padding: 3rem 0;
+    margin-top: -2rem; 
+    margin-bottom: 3rem;   
     .social-media__icon {        
         width: 4em;
         height: 4em;        
@@ -38,7 +39,7 @@
 @media (min-width:320px) and (max-width: 480px){ 
     .social-media{ 
         justify-content: center; 
-        padding: 2rem 0;       
+        margin:2rem 0;      
         .social-media__icon {        
             width: 2.8em;
             height: 2.8em;                             
@@ -70,7 +71,7 @@
     justify-content: center;
     position: absolute;
     top: 35%;
-    left: 30%; 
+    left: 25%; 
     display: none;      
     .social-media__icon_team-member{
         background: $team-dark-bg;

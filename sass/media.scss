@@ -18,12 +18,15 @@
         .container{
             .modest-content{
                 display: grid;
-                grid-template-columns: 85%;   
+                grid-template-columns: 98%;
+                .section-modest__left-block{                   
+                    text-align: justify;
+                    margin-bottom: 2rem;               
+                    }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
                     .right-block-main {                              
-                        grid-template-columns: 15% 65%;
-                        padding-bottom: 2rem;                                                    
+                        grid-template-columns: 15% 75%;                                                                          
                         .right-block-element{                                   
                             width: 2.5em;
                             height: 2.5em;                              
@@ -38,13 +41,13 @@
             }
         }
     }
-    .section-team{
+    .section-team{                      
         .container{
-            .section__our-team {
-                display: grid;
+            .section__our-team {                
                 grid-template-columns: 1fr;        
                 grid-gap: 1rem; 
                 justify-items: center;
+                margin-bottom: -3rem;
             } 
         }
     }
@@ -58,15 +61,14 @@
             }
         }
     }
-    .section-services{
+    .section-services{        
         .container{
-            .section-services__main {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-auto-rows: auto;  
-                grid-gap: 1rem;
+            .section-services__main {                
+                grid-template-columns: 1fr;                 
+                grid-gap: 2rem;
+                margin-bottom: -3rem;
                 .service-item{
-                    width:85%;
+                    width:90%;
                 }
             } 
         }
@@ -76,7 +78,12 @@
             .section-features__main {
                 display: grid;
                 grid-template-columns: 1fr; 
-                justify-items: center;         
+                justify-items: center; 
+                .feature-item{
+                    .text-feature{
+                        padding-bottom: 2rem;
+                    } 
+                }       
             }
         }   
     }
@@ -86,8 +93,10 @@
                 flex-direction: column;
                 align-content: space-between;
                 .contact__info{
-                    margin-bottom: 10em;
-                    text-align: justify;                   
+                    width: 90%;
+                    margin: 0 auto;                    
+                    text-align: justify; 
+                    margin-bottom:10em;                  
                 }
                 .form { 
                     .form__data{
@@ -199,8 +208,10 @@
                 flex-direction: column;
                 align-content: space-between;
                 .contact__info{
-                    margin-bottom: 10em;
-                    text-align: justify;                   
+                    width: 90%;
+                    margin: 0 auto;                    
+                    text-align: justify;
+                    margin-bottom:10em;                    
                 }
                 .form { 
                     .form__data{
@@ -312,8 +323,10 @@
                 flex-direction: column;
                 align-content: space-between;
                 .contact__info{
-                    margin-bottom: 10em;
-                    text-align: justify;                   
+                    width: 90%;
+                    margin: 0 auto;                    
+                    text-align: justify; 
+                    margin-bottom:10em;                   
                 }
                 .form { 
                     .form__data{
@@ -331,13 +344,11 @@
     .section-banner{
         .container{
             .welcome-text{                       
-                text-align: center;
+                text-align: left;
                 width: 100%;
-                font-size: 1em;
-                padding-left: 1rem;
-                padding-right: 1rem;
+                font-size: 1em;                
                 .display1{                    
-                    text-align: center;
+                    text-align: left;
                     font-size: 1.5em;
                 }                        
             }
@@ -445,7 +456,7 @@
         .container{
             .section__our-team {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;        
+                grid-template-columns: 1fr 1fr;        
                 grid-gap: 1rem; 
                 justify-items: center;
             } 

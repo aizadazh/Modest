@@ -10,6 +10,17 @@
     }
   }
 }
+@media (min-width:320px) and (max-width: 480px){ 
+  .header{
+    .container{
+      .header-wrapper{
+        .header-logo{
+          padding-left: 0.5rem;
+        }
+      }
+    }
+  }
+}    
 
 
 

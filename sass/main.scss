@@ -22,22 +22,17 @@
     padding: 1rem; 
     .modest-content{
         display: grid;
-        grid-template-columns: 62% 38%;    
+        grid-template-columns: 60% 40%;    
         .section-modest__left-block{                                 
-            width: 95%;
-            font-size:0.95em;                       
-            .section-modest__text-block{
-                display: flex;
-                flex-direction: column;            
-                .text-block__left {                    
-                    max-width: 100%;
-                    text-align: justify;
-                    }
-                }
+            width: 92%;
+            font-size:0.95em; 
+            line-height: 130%;
+            text-align: left;               
             }         
         .section-modest__right-block{                               
             display: grid;
-            grid-template-rows: repeat(3, 1fr);  
+            grid-template-rows: repeat(3, 1fr); 
+            grid-gap: 2rem; 
             .right-block-main {
                 display: grid;                
                 grid-template-columns: 10% 90%;            
@@ -62,9 +57,10 @@
                 font-size: 1em;
                 text-transform: uppercase;
                 font-family: 'Quattrocento Sans', sans-serif;
-                padding-bottom: 0.5rem;
+                padding-bottom: 0.4rem;
             }
             .right-block__text{
+                max-width: 90%;
                 font-size: 0.95em; 
                 text-align: justify;               
                 }
@@ -72,7 +68,6 @@
         }
     }
 }
-
 .section-team{    
     height: auto;    
     background: $white; 
@@ -111,15 +106,16 @@
             .team-member-name{
                 color: $team-member-name;
                 font-weight: bold;
-                padding-top: 0.9rem;
-                padding-left: 0.7rem;
+                padding-top: 0.6em;
+                padding-left: 0.7em;                
                 text-transform: uppercase;
                 font-family: 'Quattrocento Sans', sans-serif;                
             }
             .team-member-position{
                 color: $text;
-                padding-left: 0.7rem;
-                padding-top: 0.2rem;
+                padding-left: 0.7em;
+                padding-top: 0.2em;
+                padding-bottom: 0.6em;
             }
         }
     }
@@ -251,7 +247,7 @@
     }
 } 
 .section-contact {
-    padding: 1rem; 
+    padding: 1rem  0; 
     .container {
         position: relative;    
         .section-contact__content {            
@@ -259,8 +255,7 @@
             padding-top: 2rem;
             padding-bottom: 2rem;     
             .contact__info{
-                width: 100%; 
-                height:auto;           
+                          
                 .contact-text {    
                     color: $text;
                     width: 95%;
