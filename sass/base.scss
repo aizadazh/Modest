@@ -53,3 +53,24 @@ a{
         margin-bottom: 2rem;
         }      
     }
+    @media (min-width: 577px) and (max-width: 768px){
+        .display2{
+            font-size: 1.5em;
+            margin-top: 1rem;
+            margin-bottom: 2rem; 
+        }
+        .display2__dark{
+            color: $main-text;
+            padding-left: 0.5em;
+            border-left: 0.4em solid $h2;
+            margin-top: 1rem;
+            margin-bottom: 2rem;       
+            }
+        .display2__light{
+            color: $pic-base;
+            padding-left: 0.5em;
+            border-left: 0.4em solid $light-bg;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            }      
+        }

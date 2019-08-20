@@ -130,15 +130,19 @@
         .container{
             .modest-content{
                 display: grid;
-                grid-template-columns: 95%;   
+                grid-template-columns: 98%;
+                .section-modest__left-block{                   
+                    text-align: justify;
+                    margin-bottom: 2rem; 
+                    width: 100%;              
+                    }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
                     .right-block-main {                              
-                        grid-template-columns: 15% 80%;
-                        padding-bottom: 2rem;                                                    
+                        grid-template-columns: 10% 90%;                                                                          
                         .right-block-element{                                   
-                            width: 2.8em;
-                            height: 2.8em;                              
+                            width: 2.5em;
+                            height: 2.5em;                              
                         }
                         .right-block-text{
                             .right-block__text{
@@ -153,10 +157,10 @@
     .section-team{
         .container{
             .section__our-team {
-                display: grid;
                 grid-template-columns: 1fr;        
                 grid-gap: 1rem; 
                 justify-items: center;
+                margin-bottom: -3rem;
             } 
         }
     }
@@ -166,41 +170,38 @@
                 display: grid;
                 grid-template-columns: 1fr;        
                 grid-gap: 1rem;
-                justify-items: center;
+                justify-items: center; 
             }
         }
     }
-    .section-services{
+    .section-services{        
         .container{
-            .section-services__main {
-                display: grid;
-                grid-template-columns: 1fr;                
+            .section-services__main {                
+                grid-template-columns: 1fr;                 
+                grid-gap: 2rem;
+                margin-bottom: -3rem;
                 .service-item{
-                    width:95%;
+                    width:90%;
                 }
             } 
         }
     }
     .section-features{
         .container{
-            .section-features__main {
-                display: grid;
-                grid-template-columns: 1fr;
-                .feature-item {
-                    .feature-image { 
-                        margin: 0 auto;
-                    } 
-                    .display3-feature{ 
-                        text-align: center;
-                    }
+            .section-features__main {                
+                grid-template-columns: 1fr; 
+                justify-items: center; 
+                .feature-item{
+                    display:flex;
+                    align-items: center;
                     .text-feature{
-                        text-align: center;
+                        padding-bottom: 2rem;
+                        text-align: justify;
                         max-width: 80%;
-                        margin: 0 auto;
-                    }                    
-                }
-            }   
-        }
+                    } 
+                }       
+            }
+        }   
     }
     .section-contact{
         .container{        
@@ -210,8 +211,8 @@
                 .contact__info{
                     width: 90%;
                     margin: 0 auto;                    
-                    text-align: justify;
-                    margin-bottom:10em;                    
+                    text-align: justify; 
+                    margin-bottom:10em;                  
                 }
                 .form { 
                     .form__data{
@@ -245,19 +246,27 @@
         .container{
             .modest-content{
                 display: grid;
-                grid-template-columns: 90%;   
+                grid-template-columns: 98%;
+                .section-modest__left-block{                   
+                    text-align: justify;
+                    margin-bottom: 2rem;
+                    font-size:1em; 
+                    line-height: 130%; 
+                    width: 100%;              
+                    }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
                     .right-block-main {                              
-                        grid-template-columns: 15% 80%;
-                        padding-bottom: 2rem;                                                    
+                        grid-template-columns: 10% 90%;                                                                          
                         .right-block-element{                                   
-                            width: 3em;
-                            height: 3em;                              
+                            width: 3.5em;
+                            height: 3.5em;                              
                         }
                         .right-block-text{
                             .right-block__text{
                                 text-align: justify;
+                                font-size:1em; 
+                                line-height: 130%;
                             }
                         }
                     }
@@ -267,11 +276,11 @@
     }
     .section-team{
         .container{
-            .section__our-team {
-                display: grid;
-                grid-template-columns: 1fr 1fr;        
-                grid-gap: 1rem; 
+            .section__our-team {                
+                grid-template-columns: 1fr 1fr;                
                 justify-items: center;
+                margin-top: -1rem;
+                margin-bottom:-2rem;
             } 
         }
     }
@@ -288,8 +297,9 @@
     .section-services{
         .container{
             .section-services__main {
-                display: grid;
-                grid-template-columns: 1fr 1fr;                
+                grid-template-columns: 1fr 1fr;
+                grid-gap:2rem;
+                margin-bottom: -3rem;                
                 .service-item{
                     width:95%;
                 }
@@ -298,20 +308,12 @@
     }
     .section-features{
         .container{
-            .section-features__main {
-                display: grid;
+            .section-features__main {               
                 grid-template-columns: 1fr 1fr;
-                .feature-item {
-                    .feature-image { 
-                        margin: 0 auto;
-                    } 
-                    .display3-feature{ 
-                        text-align: center;
-                    }
-                    .text-feature{
-                        text-align: center;
-                        max-width: 85%;
-                        margin: 0 auto;
+                margin-bottom: -3rem;
+                .feature-item {                   
+                    .text-feature{                        
+                        max-width: 90%;                       
                     }                    
                 }
             }   
@@ -358,19 +360,27 @@
         .container{
             .modest-content{
                 display: grid;
-                grid-template-columns: 100%;   
+                grid-template-columns: 98%;
+                .section-modest__left-block{                   
+                    text-align: justify;
+                    margin-bottom: 2rem;
+                    font-size:1em; 
+                    line-height: 130%; 
+                    width: 100%;              
+                    }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
                     .right-block-main {                              
-                        grid-template-columns: 10% 90%;
-                        padding-bottom: 2rem;                                                    
+                        grid-template-columns: 10% 90%;                                                                          
                         .right-block-element{                                   
-                            width: 3em;
-                            height: 3em;                              
+                            width: 3.5em;
+                            height: 3.5em;                              
                         }
                         .right-block-text{
                             .right-block__text{
                                 text-align: justify;
+                                font-size:1em; 
+                                line-height: 130%;
                             }
                         }
                     }
@@ -380,29 +390,30 @@
     }
     .section-team{
         .container{
-            .section__our-team {
-                display: grid;
+            .section__our-team {               
                 grid-template-columns: 1fr 1fr 1fr;        
                 grid-gap: 1rem; 
                 justify-items: center;
+                margin-bottom: -3rem;
             } 
         }
     }
     .section-work{
         .container{
-            .section__lovely-work{
-                display: grid;
+            .section__lovely-work{                
                 grid-template-columns: 1fr 1fr 1fr;        
                 grid-gap: 1rem;
                 justify-items: center;
+               
             }
         }
     }
     .section-services{
         .container{
-            .section-services__main {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;                
+            .section-services__main {                
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 2rem; 
+                margin-bottom: -3rem;               
                 .service-item{
                     width:95%;
                 }
@@ -411,20 +422,12 @@
     }
     .section-features{
         .container{
-            .section-features__main {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                .feature-item {
-                    .feature-image { 
-                        margin: 0 auto;
-                    } 
-                    .display3-feature{ 
-                        text-align: center;
-                    }
-                    .text-feature{
-                        text-align: center;
-                        max-width: 85%;
-                        margin: 0 auto;
+            .section-features__main {                
+                grid-template-columns: 1fr 1fr;
+                margin-bottom: -3rem;
+                .feature-item {                 
+                    .text-feature{                        
+                        max-width: 85%;                        
                     }                    
                 }
             }   
@@ -436,8 +439,9 @@
                 flex-direction: column;
                 align-content: space-between;
                 .contact__info{
-                    margin-bottom: 10em;
-                    text-align: justify;                   
+                    width: 100%;                                      
+                    text-align: justify; 
+                    margin-bottom:10em;                   
                 }
                 .form { 
                     .form__data{
@@ -451,15 +455,31 @@
         }
     }       
 }
-@media (min-width:993px) and (max-width: 1170px){  
+@media (min-width:993px) and (max-width: 1169px){  
     .section-team{
         .container{
-            .section__our-team {
-                display: grid;
-                grid-template-columns: 1fr 1fr;        
+            .section__our-team {               
+                grid-template-columns: repeat(4 1fr);        
                 grid-gap: 1rem; 
                 justify-items: center;
+                margin-bottom: -3rem;
             } 
         }
     }
+    #contact{ 
+        .container{            
+            .section-contact__content {               
+                .form { 
+                    .form__data{                        
+                        .name{
+                            .form__input{
+                                font-size: 1.1em;
+                        }
+                    }          
+                }
+            }                
+    }
 }
+} 
+}      
+

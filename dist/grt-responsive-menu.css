@@ -184,12 +184,10 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 
 /* Mobile only style */
 @media (max-width:767px) {
-
 	.menu-container {
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-
 	.grt-mobile-button {
 		display:inline-block;
 		position:absolute;
