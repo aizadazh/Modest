@@ -317,11 +317,6 @@ a {
         font-size: 1rem; } }
 
 @media (min-width: 993px) and (max-width: 1169px) {
-  .section-team .container .section__our-team {
-    grid-template-columns: repeat(4 1fr);
-    grid-gap: 1rem;
-    justify-items: center;
-    margin-bottom: -3rem; }
   #contact .container .section-contact__content .form .form__data .name .form__input {
     font-size: 1.1em; } }
 
@@ -478,8 +473,6 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem; }
     .section-team .section__our-team .team-member {
-      width: 15em;
-      height: auto;
       background-color: #e1e6ea;
       display: flex;
       flex-direction: column;

@@ -77,9 +77,7 @@
         display: grid;        
         grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;     
-        .team-member{
-            width: 15em;
-            height: auto;
+        .team-member{            
             background-color: $light-bg;
             display: flex;
             flex-direction: column; 
