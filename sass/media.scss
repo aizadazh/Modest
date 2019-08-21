@@ -34,25 +34,27 @@
         }    
     .section-modest{
         .container{
-            .modest-content{
-                display: grid;
-                grid-template-columns: 95%;
+            .modest-content{               
+                grid-template-columns: 100%;
                 justify-items: center;
                 .section-modest__left-block{                   
                     text-align: justify;
-                    margin-bottom: 2rem;               
+                    margin-bottom: 2rem;                             
                     }   
                 .section-modest__right-block{      
-                    grid-template-rows: auto auto auto;  
+                    grid-template-rows: auto auto auto; 
+                    padding-left: 0.7rem;
                     .right-block-main {                              
-                        grid-template-columns: 15% 75%;                                                                          
+                        grid-template-columns: 15% 80%; 
+                        grid-gap: 1rem;                                                                         
                         .right-block-element{                                   
                             width: 2.5em;
                             height: 2.5em;                              
                         }
                         .right-block-text{
-                            .right-block__text{
+                            .right-block__text{                                
                                 text-align: justify;
+                                font-size:0.8em;
                             }
                         }
                     }
@@ -63,45 +65,45 @@
     .section-team{                      
         .container{
             .section__our-team {                
-                grid-template-columns: 1fr;        
-                grid-gap: 1rem; 
-                justify-items: center;
-                margin-bottom: -3rem;
+                grid-template-columns: 1fr;            
+                justify-items: center;               
             } 
         }
     }
     .section-work{
         .container{
-            .section__lovely-work{
-                display: grid;
-                grid-template-columns: 1fr;        
-                grid-gap: 1rem;
-                justify-items: center; 
+            .section__lovely-work{               
+                grid-template-columns: 1fr; 
+                padding: 0 1.1em;
+                .portfolio-item {
+                    text-align: center;
+                }             
+                
             }
         }
     }
     .section-services{        
         .container{
             .section-services__main {                
-                grid-template-columns: 1fr;                 
-                grid-gap: 2rem;
-                margin-bottom: -3rem;
-                justify-items: center;
+                grid-template-columns: 1fr;               
+                grid-row-gap: 2rem;
                 .service-item{
-                    width:90%;
+                    width:100%;
                 }
             } 
         }
     }
     .section-features{
         .container{
-            .section-features__main {
-                display: grid;
+            .section-features__main {                
                 grid-template-columns: 1fr; 
-                justify-items: center; 
-                .feature-item{
+                justify-items: center;
+                grid-row-gap: 2rem; 
+                .feature-item{ 
+                    display:flex;
+                    align-items: center;                   
                     .text-feature{
-                        padding-bottom: 2rem;
+                        font-size: 0.8em;
                     } 
                 }       
             }
@@ -112,7 +114,7 @@
             .section-contact__content {                              
                 flex-direction: column;                
                 .contact__info{
-                    width: 95%;
+                    width: 87%;
                     margin: 0 auto;                    
                     text-align: justify; 
                     margin-bottom: 10em;                  
@@ -121,7 +123,7 @@
                     .form__data{
                         flex-direction: column;
                         .form__input{
-                            font-size: 1rem;
+                            font-size: 1em;
                         }
                     }          
                 }
@@ -132,13 +134,13 @@
 @media (min-width:481px) and (max-width: 576px){    
     .section-modest{
         .container{
-            .modest-content{
-                display: grid;
+            .modest-content{               
                 grid-template-columns: 98%;
                 .section-modest__left-block{                   
                     text-align: justify;
                     margin-bottom: 2rem; 
-                    width: 100%;              
+                    width: 100%;
+                    font-size:0.9em;              
                     }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
@@ -151,6 +153,7 @@
                         .right-block-text{
                             .right-block__text{
                                 text-align: justify;
+                                font-size:0.9em;
                             }
                         }
                     }
@@ -161,19 +164,15 @@
     .section-team{
         .container{
             .section__our-team {
-                grid-template-columns: 1fr;        
-                grid-gap: 1rem; 
-                justify-items: center;
-                margin-bottom: -3rem;
+                grid-template-columns: 1fr;                 
+                justify-items: center;               
             } 
         }
     }
     .section-work{
         .container{
-            .section__lovely-work{
-                display: grid;
-                grid-template-columns: 1fr;        
-                grid-gap: 1rem;
+            .section__lovely-work{                
+                grid-template-columns: 1fr;                
                 justify-items: center; 
             }
         }
@@ -181,11 +180,9 @@
     .section-services{        
         .container{
             .section-services__main {                
-                grid-template-columns: 1fr;                 
-                grid-gap: 2rem;
-                margin-bottom: -3rem;
+                grid-template-columns: 1fr;           
                 .service-item{
-                    width:90%;
+                    width:100%;
                 }
             } 
         }
@@ -202,6 +199,7 @@
                         padding-bottom: 2rem;
                         text-align: justify;
                         max-width: 80%;
+                        font-size: 0.9em;
                     } 
                 }       
             }
@@ -222,7 +220,7 @@
                     .form__data{
                         flex-direction: column;
                         .form__input{
-                            font-size: 1rem;
+                            font-size: 1em;
                         }
                     }          
                 }
@@ -233,14 +231,12 @@
 @media (min-width: 577px) and (max-width: 768px){    
     .section-modest{
         .container{
-            .modest-content{
-                display: grid;
+            .modest-content{               
                 grid-template-columns: 98%;
                 .section-modest__left-block{                   
                     text-align: justify;
                     margin-bottom: 2rem;
-                    font-size:1em; 
-                    line-height: 130%; 
+                    font-size:1em;                   
                     width: 100%;              
                     }   
                 .section-modest__right-block{      
@@ -254,8 +250,7 @@
                         .right-block-text{
                             .right-block__text{
                                 text-align: justify;
-                                font-size:1em; 
-                                line-height: 130%;
+                                font-size:1em;                                 
                             }
                         }
                     }
@@ -267,18 +262,14 @@
         .container{
             .section__our-team {                
                 grid-template-columns: 1fr 1fr;                
-                justify-items: center;
-                margin-top: -1rem;
-                margin-bottom:-2rem;
+                justify-items: center;                
             } 
         }
     }
     .section-work{
         .container{
-            .section__lovely-work{
-                display: grid;
-                grid-template-columns: 1fr 1fr;        
-                grid-gap: 1rem;
+            .section__lovely-work{                
+                grid-template-columns: 1fr 1fr;              
                 justify-items: center;
             }
         }
@@ -286,11 +277,9 @@
     .section-services{
         .container{
             .section-services__main {
-                grid-template-columns: 1fr 1fr;
-                grid-gap:2rem;
-                margin-bottom: -3rem;                
+                grid-template-columns: 1fr 1fr;                            
                 .service-item{
-                    width:95%;
+                    width:100%;
                 }
             } 
         }
@@ -298,9 +287,10 @@
     .section-features{
         .container{
             .section-features__main {               
-                grid-template-columns: 1fr 1fr;
-                margin-bottom: -3rem;
-                .feature-item {                   
+                grid-template-columns: 1fr 1fr;              
+                .feature-item {
+                    display:flex;
+                    align-items: center;                   
                     .text-feature{                        
                         max-width: 90%;                       
                     }                    
@@ -314,16 +304,16 @@
                 flex-direction: column;
                 align-content: space-between;
                 .contact__info{
-                    width: 90%;
+                    width: 100%;
                     margin: 0 auto;                    
                     text-align: justify; 
-                    margin-bottom:10em;                   
+                    margin-bottom: 10em;                   
                 }
                 .form { 
                     .form__data{
                         flex-direction: column;
                         .form__input{
-                            font-size: 1rem;
+                            font-size: 0.9rem;
                         }
                     }          
                 }
@@ -334,15 +324,12 @@
 @media (min-width: 769px) and (max-width: 992px){    
     .section-modest{
         .container{
-            .modest-content{
-                display: grid;
-                grid-template-columns: 98%;
+            .modest-content{                
+                grid-template-columns: 100%;
                 .section-modest__left-block{                   
                     text-align: justify;
                     margin-bottom: 2rem;
-                    font-size:1em; 
-                    line-height: 130%; 
-                    width: 100%;              
+                    font-size:1em;                               
                     }   
                 .section-modest__right-block{      
                     grid-template-rows: auto auto auto;  
@@ -355,8 +342,7 @@
                         .right-block-text{
                             .right-block__text{
                                 text-align: justify;
-                                font-size:1em; 
-                                line-height: 130%;
+                                font-size: 1em;                                 
                             }
                         }
                     }
@@ -367,18 +353,15 @@
     .section-team{
         .container{
             .section__our-team {               
-                grid-template-columns: 1fr 1fr 1fr;        
-                grid-gap: 1rem; 
-                justify-items: center;
-                margin-bottom: -3rem;
+                grid-template-columns: 1fr 1fr 1fr;            
+                justify-items: center;               
             } 
         }
     }
     .section-work{
         .container{
             .section__lovely-work{                
-                grid-template-columns: 1fr 1fr 1fr;        
-                grid-gap: 1rem;
+                grid-template-columns: 1fr 1fr 1fr;          
                 justify-items: center;
                
             }
@@ -387,11 +370,9 @@
     .section-services{
         .container{
             .section-services__main {                
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 2rem; 
-                margin-bottom: -3rem;               
+                grid-template-columns: 1fr 1fr 1fr;                    
                 .service-item{
-                    width:95%;
+                    width:100%;
                 }
             } 
         }
@@ -399,9 +380,10 @@
     .section-features{
         .container{
             .section-features__main {                
-                grid-template-columns: 1fr 1fr;
-                margin-bottom: -3rem;
-                .feature-item {                 
+                grid-template-columns: 1fr 1fr;               
+                .feature-item { 
+                    display:flex;
+                    align-items: center;                
                     .text-feature{                        
                         max-width: 85%;                        
                     }                    
@@ -423,7 +405,7 @@
                     .form__data{
                         flex-direction: column;
                         .form__input{
-                            font-size: 1rem;
+                            font-size: 0.8em;
                         }
                     }          
                 }
@@ -439,7 +421,7 @@
                     .form__data{                        
                         .name{
                             .form__input{
-                                font-size: 1.1em;
+                                font-size: 1em;
                         }
                     }          
                 }

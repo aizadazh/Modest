@@ -1,7 +1,7 @@
 .section-banner{ 
     min-height: 660px;
     max-width: 1560px;  
-    height: 500px;    
+    height: 50vh;    
     position: relative;
     width: 100%;
     .container{
@@ -53,19 +53,17 @@
                 }
             }
         }
-    }  
+    } 
 .section-modest{
-    height: auto;   
-    border-bottom: 1px solid $link; 
-    margin: 3rem auto;  
+    height: auto;       
+    margin-top: 3rem;  
     .modest-content{
         display: grid;
         grid-template-columns: 60% 40%;    
         .section-modest__left-block{                                 
             width: 92%;
-            font-size:0.95em; 
-            line-height: 130%;
-            text-align: left;               
+            font-size: 0.95em;                
+            font-family: 'Open Sans', sans-serif;             
             }         
         .section-modest__right-block{                               
             display: grid;
@@ -74,7 +72,7 @@
             .right-block-main {
                 display: grid;                
                 grid-template-columns: 10% 90%;            
-                grid-gap: 1.5rem;
+                grid-column-gap: 2rem;
                 .right-block-element{                                   
                     width: 3.5em;
                     height: 3.5em;
@@ -99,8 +97,9 @@
             }
             .right-block__text{
                 max-width: 90%;
-                font-size: 0.95em; 
-                text-align: justify;               
+                font-size: 0.95em;                
+                font-family: 'Open Sans', sans-serif;
+                             
                 }
             }
         }
@@ -169,12 +168,12 @@
     .section__lovely-work{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 2rem;    
+        grid-row-gap: 1.2rem;    
         .portfolio-item {
             position: relative;                       
             .portfolio-image {
                 display: block;
-                max-width: 90%;
+                max-width: 100%;                
                 height: auto;
             }
             .portfolio-plus{
@@ -192,7 +191,7 @@
                 }
         }       
         .portfolio-base {
-            width: 90%;
+            width: 95%;
             height: 3.5em;
             background: $pic-base;
             position: absolute;
@@ -201,7 +200,7 @@
         }
         .portfolio-text{
             font-weight: 400;
-            padding-top: 1em;
+            padding-top: 1.3em;
             padding-left: 1em;
             color: $light-bg;
             text-transform: uppercase;
@@ -272,8 +271,7 @@
                 color: $main-text;
                 font-size: 1em;
                 text-align: justify; 
-                max-width: 90%;
-                                           
+                max-width: 90%;                                           
             }               
         }
     }
@@ -288,15 +286,14 @@
             .contact__info{                          
                 .contact-text {    
                     color: $text;
-                    width: 95%;                   
-                    padding-bottom: 1.5rem;
-                    }
-                .contact__title {
-                    margin-bottom: 1.5rem;    
+                    width: 100%;                   
+                    padding-top: 1.5rem;
+                }
+                .contact__title {                        
                     color: $h2;    
                     text-transform: uppercase;
                     font-family: 'Quattrocento Sans', sans-serif;
-                    }
+                    }                
                 }
             .form{
                 width:100%;
@@ -321,10 +318,10 @@
                             width: 100%;                           
                             border: none;
                             border-radius: 0.2em;
-                            background-color: $bg-contact;
-                            font-family: "OpenSans-Regular";
+                            background-color: $bg-contact; 
+                            font-family: 'Quattrocento Sans', sans-serif;                           
                             height: 2.75rem;                           
-                            font-size: 1.4em;
+                            font-size: 1.2em;
                             font-style: italic;
                             color: $text;
                             padding-left: 1em;
@@ -353,7 +350,7 @@
                     color: $text;                    
                     padding-left: 1em;
                     padding-top: 1em;
-                    font-family: "OpenSans-Regular";
+                    font-family: 'Quattrocento Sans', sans-serif;
                     outline: none;
                     margin-bottom: 2rem;
                     box-sizing: border-box;                   
