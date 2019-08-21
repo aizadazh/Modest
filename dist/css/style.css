@@ -568,7 +568,7 @@ slide:nth-child(4) {
 .section-work {
   height: auto;
   background: #3a454d;
-  margin: 3rem auto; }
+  padding: 3rem 0; }
   .section-work .display2-features {
     color: #dcdfe1;
     padding-left: 0.5em;
@@ -636,7 +636,7 @@ slide:nth-child(4) {
 .section-features {
   height: auto;
   background: #3a454d;
-  margin: 3rem auto; }
+  padding: 3rem 0; }
   .section-features .section-features__main {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
@@ -808,7 +808,8 @@ slide:nth-child(4) {
 .social-media {
   display: flex;
   justify-content: flex-start;
-  margin-top: -2rem; }
+  margin-top: -2rem;
+  margin-bottom: 3rem; }
   .social-media .social-media__icon {
     width: 4em;
     height: 4em;
@@ -840,7 +841,8 @@ slide:nth-child(4) {
 @media (min-width: 320px) and (max-width: 576px) {
   .social-media {
     justify-content: center;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    margin-bottom: 1.5rem; }
     .social-media .social-media__icon {
       width: 2.8em;
       height: 2.8em; }
@@ -889,7 +891,8 @@ slide:nth-child(4) {
   .social-media {
     display: flex;
     justify-content: flex-start;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
     .social-media .social-media__icon {
       width: 4em;
       height: 4em;
