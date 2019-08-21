@@ -36,16 +36,25 @@ a{
     padding-left: 0.5em;
     border-left: 0.4em solid $light-bg;    
     }  
-@media (min-width:320px) and (max-width: 576px){
+@media (min-width:320px) and (max-width: 480px){
     .display2{
         font-size: 1.3em;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.5rem; 
+        margin-left: 1rem;      
+    }
+}
+@media (min-width:481px) and (max-width: 576px){
+    .display2{
+        font-size: 1.3em;
+        margin-bottom: 1.5rem; 
+             
     }
 }
     @media (min-width: 577px) and (max-width: 768px){
         .display2{
             font-size: 1.5em;
             margin-bottom: 2rem;
+           
         }
     }
       
