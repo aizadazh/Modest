@@ -58,7 +58,8 @@ a {
   .section-banner {
     height: 70vh; }
     .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
-      align-items: center; }
+      align-items: center;
+      left: 2%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
         font-size: 1.2em;
         text-align: center;
@@ -140,7 +141,8 @@ a {
   .section-banner {
     height: 70vh; }
     .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
-      align-items: center; }
+      align-items: center;
+      left: 2%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
         font-size: 1.2em;
         text-align: center;
