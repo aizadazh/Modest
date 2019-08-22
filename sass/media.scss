@@ -1,4 +1,9 @@
 @media (min-width:320px) and (max-width: 480px){ 
+    nav{					
+		.nav-box{
+            padding: 0 1.7rem;
+        }
+    }
     .section-banner{
         height: 70vh;            
         .swiper-container{
@@ -148,7 +153,13 @@
         }
     }      
 }
-@media (min-width:481px) and (max-width: 576px){    
+@media (min-width:481px) and (max-width: 576px){ 
+    nav{					
+		.nav-box{
+            padding-left: 1.2rem;
+            padding-right: 2.5rem;
+        }
+    }   
     .section-banner{
         height: 70vh;            
         .swiper-container{
@@ -297,7 +308,12 @@
 }
 }
 @media (min-width: 577px) and (max-width: 768px){ 
-
+    nav{					
+		.nav-box{
+            padding-left: 1.5rem;
+            padding-right: 2rem;
+        }
+    } 
     .section-modest{
         .container{
             .modest-content{               
@@ -402,6 +418,12 @@
     }      
 }
 @media (min-width: 769px) and (max-width: 992px){ 
+    nav{					
+		.nav-box{
+            padding-left: 1.2rem;
+           
+        }
+    }
     .section-team{
         .container{
             .section__our-team {               
