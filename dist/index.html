@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Modest</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../node_modules/swiper/dist/css/swiper.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./grt-responsive-menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap" rel="stylesheet">     
 </head>
 <body>    
     <header class="nav">
         <div class="container">
-            <div class="header-wrapper">                              
+            <div class="header-wrapper">                                                           
                 <a class="header-logo" href="#">
                     <img src="./images/modest.png" alt="logo">
                 </a>                           
@@ -27,14 +27,14 @@
                     <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                     <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
                     <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>                                
-                </ul>
+                </ul>                           
                 <button id="menu-button">                           
                     <span class="line"></span>                    
                     <span class="line"></span>                    
                     <span class="line"></span>                    
                 </button>                
             </div> 
-            <div class="mobile-menu">
+            <div class="drawer">
                 <ul class="menu">                                           
                     <li class="nav-item"><a href="#" class="active nav-link">Home</a></li>
                     <li class="nav-item"><a href="#modest" class="nav-link">About</a></li>
@@ -49,19 +49,9 @@
         </div>
     </header>          
     <section class="section-banner"> 
-        <div class="container"> 
-           <slider>
-               <slide>
-                   <div class="banner-content">                                                          
-                        <h1 class="display1">Welcome to our marketplace</h1>
-                        <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus..</p>
-                        <div class="btn-group">
-                            <a class="banner-btn" href="">View more</a>
-                            <a class="banner-btn" href="">Video tour</a> 
-                        </div>
-                    </div>          
-                </slide>
-                <slide>
+        <div class="swiper-container">           
+            <div class="swiper-wrapper">               
+                <div class="swiper-slide">                  
                     <div class="banner-content">                                                          
                         <h1 class="display1">Welcome to our marketplace</h1>
                         <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus..</p>
@@ -69,9 +59,9 @@
                             <a class="banner-btn" href="">View more</a>
                             <a class="banner-btn" href="">Video tour</a> 
                         </div>
-                    </div>          
-                </slide>
-                <slide>
+                    </div>
+                </div>                                      
+                <div class="swiper-slide">                    
                     <div class="banner-content">                                                          
                         <h1 class="display1">Welcome to our marketplace</h1>
                         <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus..</p>
@@ -79,9 +69,10 @@
                             <a class="banner-btn" href="">View more</a>
                             <a class="banner-btn" href="">Video tour</a> 
                         </div>
-                    </div>          
-                </slide>
-                <slide>
+                    </div>                        
+                </div>
+                </div>
+                <div class="swiper-slide">                    
                     <div class="banner-content">                                                          
                         <h1 class="display1">Welcome to our marketplace</h1>
                         <p class="welcome-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisi metus, tristique ndolor non, ornare sagittis dolor. Nulla vestibulu lacus..</p>
@@ -89,9 +80,13 @@
                             <a class="banner-btn" href="">View more</a>
                             <a class="banner-btn" href="">Video tour</a> 
                         </div>
-                    </div>          
-                </slide>             
-            </slider>
+                    </div>                        
+                </div>
+                </div>                
+            </div>            
+            <div class="swiper-pagination"></div>        
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>            
         </div>
     </section>   
     <section id="modest" class="section-modest">        
@@ -434,7 +429,11 @@
             integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
             crossorigin="anonymous">
     </script>
-    <script src="./grt-responsive-menu.js"></script> 
+    <script src="../node_modules/swiper/dist/js/swiper.min.js"></script>
+    <script src="./scripts/main.js"></script>
     
 </body>
 </html>
+
+                  
+    
