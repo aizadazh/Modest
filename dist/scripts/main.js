@@ -4,10 +4,10 @@ let boll = false;
 let backDrop = document.querySelector(".back-drop");
 let carouselSlides = document.querySelectorAll("header ul li");
 let carouselButtons = document.querySelectorAll(".controls button");
-let header = document.querySelector("header");
+let header = document.querySelector(".section-banner");
 const anchors = document.querySelectorAll('a[href*="#"]');
 const workLinks = document.querySelectorAll('a[href*="?work_"]');
-const links = document.querySelectorAll(".nav-box a");
+const links = document.querySelectorAll(".nav-link");
 
 for (let i = 0; i < carouselButtons.length; i++) {
   const button = carouselButtons[i];

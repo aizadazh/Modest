@@ -1,11 +1,11 @@
 @media (min-width:320px) and (max-width: 480px){ 
-    .section-banner{ 
-        .container{
-            slider{
-                slide{                               
+    .section-banner{            
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{                               
                     .banner-content{                
                         align-items: center;
-                        top: 25%;
+                        top: 30%;
                         left: 0%;                  
                         .display1 {                                   
                             font-size: 1.2em;
@@ -31,7 +31,8 @@
                     }
                 }
             }
-        }    
+    }
+            
     .section-modest{
         .container{
             .modest-content{               
@@ -145,10 +146,10 @@
     }      
 }
 @media (min-width:481px) and (max-width: 576px){    
-    .section-banner{ 
-        .container{
-            slider{
-                slide{                               
+    .section-banner{            
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{                               
                     .banner-content{                
                         align-items: center;
                         top: 35%;
@@ -290,7 +291,8 @@
     }
 }
 }
-@media (min-width: 577px) and (max-width: 768px){    
+@media (min-width: 577px) and (max-width: 768px){ 
+       
     .section-modest{
         .container{
             .modest-content{               

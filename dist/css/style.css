@@ -53,20 +53,20 @@ a {
     margin-bottom: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .section-banner .container slider slide .banner-content {
+  .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
     align-items: center;
-    top: 25%;
+    top: 30%;
     left: 0%; }
-    .section-banner .container slider slide .banner-content .display1 {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
       font-size: 1.2em;
       width: 70%;
       text-align: center; }
-    .section-banner .container slider slide .banner-content .welcome-text {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
       text-align: center;
       width: 85%; }
-    .section-banner .container slider slide .banner-content .btn-group {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group {
       flex-direction: column; }
-      .section-banner .container slider slide .banner-content .btn-group .banner-btn {
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
         font-weight: 500;
         font-size: 0.7em;
         margin-bottom: 1rem;
@@ -130,18 +130,18 @@ a {
       padding-top: 2rem; } }
 
 @media (min-width: 481px) and (max-width: 576px) {
-  .section-banner .container slider slide .banner-content {
+  .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
     align-items: center;
     top: 35%;
     left: 0%; }
-    .section-banner .container slider slide .banner-content .display1 {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
       font-size: 1.4em;
       width: 80%;
       text-align: center; }
-    .section-banner .container slider slide .banner-content .welcome-text {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
       text-align: center;
       width: 85%; }
-    .section-banner .container slider slide .banner-content .btn-group .banner-btn {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
       font-weight: 500;
       font-size: 0.8em;
       margin-bottom: 1rem;
@@ -295,64 +295,66 @@ a {
   background: #1d2126;
   display: flex;
   justify-content: center; }
-  .nav .header-wrapper {
-    width: 100%;
-    height: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
-    .nav .header-wrapper .menu {
-      width: 60%;
-      margin: 0 19px;
-      padding: 0;
+  .nav .container {
+    display: flex; }
+    .nav .container .header-wrapper {
+      width: 100%;
       height: inherit;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-      list-style: none; }
-      .nav .header-wrapper .menu .nav-item .nav-link {
-        text-transform: uppercase;
-        font-size: 1em;
-        display: block;
-        padding: 4px 9px;
-        text-decoration: none;
-        color: #a4aead;
-        border: 2px solid transparent; }
-        .nav .header-wrapper .menu .nav-item .nav-link.active {
-          color: #23b7a4;
-          border: 2px solid #23b7a4;
-          border-radius: 6px; }
-        .nav .header-wrapper .menu .nav-item .nav-link:hover {
-          border-color: #9fa9a8;
-          border-radius: 6px; }
-    .nav .header-wrapper #menu-button {
-      width: 40px;
-      height: 40px;
-      border: 0;
-      background: transparent;
+      justify-content: space-between; }
+      .nav .container .header-wrapper .menu {
+        width: 60%;
+        margin: 0 19px;
+        padding: 0;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none; }
+        .nav .container .header-wrapper .menu .nav-item .nav-link {
+          text-transform: uppercase;
+          font-size: 1em;
+          display: block;
+          padding: 4px 9px;
+          text-decoration: none;
+          color: #a4aead;
+          border: 2px solid transparent; }
+          .nav .container .header-wrapper .menu .nav-item .nav-link.active {
+            color: #23b7a4;
+            border: 2px solid #23b7a4;
+            border-radius: 6px; }
+          .nav .container .header-wrapper .menu .nav-item .nav-link:hover {
+            border-color: #9fa9a8;
+            border-radius: 6px; }
+      .nav .container .header-wrapper #menu-button {
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background: transparent;
+        display: none;
+        outline: none; }
+        .nav .container .header-wrapper #menu-button .line {
+          width: 100%;
+          height: 3px;
+          background: #ffffff;
+          display: block;
+          margin: 5px 0; }
+    .nav .container .drawer {
       display: none;
-      outline: none; }
-      .nav .header-wrapper #menu-button .line {
-        width: 100%;
-        height: 3px;
-        background: #ffffff;
-        display: block;
-        margin: 5px 0; }
-  .nav .drawer {
-    display: none;
-    transform: translateX(-100%);
-    transition: transform 0.6s; }
-    .nav .drawer .menu .nav-item {
-      margin: 0 10px; }
-  .nav .back-drop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #00000066;
-    z-index: 10; }
+      transform: translateX(-100%);
+      transition: transform 0.6s; }
+      .nav .container .drawer .menu .nav-item {
+        margin: 0 10px; }
+    .nav .container .back-drop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #00000066;
+      z-index: 10; }
 
 @media (max-width: 950px) {
   .nav .header-wrapper .menu {
@@ -457,42 +459,42 @@ a {
 
 .section-banner {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   position: relative; }
   .section-banner .swiper-container {
-    margin-top: 6.5%;
+    margin-top: 6%;
     width: 100%;
     height: 100%; }
-    .section-banner .swiper-container .swiper-slide {
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide {
       background-image: url(../images/photo1.png);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
-      .section-banner .swiper-container .swiper-slide .banner-content {
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         position: relative;
         top: 30%;
         left: 5%; }
-        .section-banner .swiper-container .swiper-slide .banner-content .display1 {
+        .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
           color: #ffffff;
           font-size: 1.5em;
           font-family: "Quattrocento Sans";
           font-weight: 700;
           text-transform: uppercase;
           margin-bottom: 1.6rem; }
-        .section-banner .swiper-container .swiper-slide .banner-content .welcome-text {
+        .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
           color: #dcdfe1;
           width: 53%;
           font-size: 1em;
           font-family: "Open Sans";
           font-weight: 400; }
-        .section-banner .swiper-container .swiper-slide .banner-content .btn-group {
+        .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group {
           display: flex;
           justify-content: flex-start;
           margin-top: 2rem; }
-          .section-banner .swiper-container .swiper-slide .banner-content .btn-group .banner-btn {
+          .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
             text-transform: uppercase;
             color: #ffffff;
             font-family: "Quattrocento Sans";
@@ -504,10 +506,20 @@ a {
             border-radius: 5px;
             border: 2px solid #ffffff;
             font-size: 1em; }
-            .section-banner .swiper-container .swiper-slide .banner-content .btn-group .banner-btn:hover {
+            .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn:hover {
               background-color: #23b7a4;
               border-color: #23b7a4;
               transition: 0.3s linear; }
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: transparent;
+  border: 2px solid #ffffff; }
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #ffffff; }
+
+.swiper-pagination .swiper-pagination-clickable .swiper-pagination-bullets {
+  text-align: right; }
 
 .section-modest {
   height: auto;

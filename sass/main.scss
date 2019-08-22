@@ -1,66 +1,87 @@
 .section-banner{ 
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     .swiper-container {
-        margin-top: 6.5%;
+        margin-top: 6%;
         width: 100%;
         height: 100%;
-        .swiper-slide {
-            background-image: url(../images/photo1.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;                 
-            .banner-content{
-                display:flex;
-                flex-direction: column;
-                justify-content: flex-start;           
-                position: relative;
-                top: 30%;
-                left: 5%;    
-                .display1 {
-                    color: $white;          
-                    font-size: 1.5em;
-                    font-family: "Quattrocento Sans";
-                    font-weight: 700;      
-                    text-transform: uppercase;
-                    margin-bottom: 1.6rem;
-                }
-                .welcome-text{
-                    color:$main-text;
-                    width: 53%;
-                    font-size: 1em;
-                    font-family: "Open Sans";
-                    font-weight: 400;                          
-                }
-                .btn-group {
-                    display: flex;
-                    justify-content: flex-start; 
-                    margin-top: 2rem;            
-                    .banner-btn {
-                        text-transform: uppercase; 
-                        color: $white; 
+        .swiper-wrapper{
+            .swiper-slide {
+                background-image: url(../images/photo1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;                 
+                .banner-content{
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: flex-start;           
+                    position: relative;
+                    top: 30%;
+                    left: 5%;    
+                    .display1 {
+                        color: $white;          
+                        font-size: 1.5em;
                         font-family: "Quattrocento Sans";
-                        font-weight: 600;
-                        width: 9em;
-                        height:3em;                                   
-                        margin-right: 1rem;                             
-                        padding: 0.8em 1.3em;                    
-                        border-radius: 5px;
-                        border: 2px solid $white;
-                        font-size: 1em;            
-                        &:hover {
-                            background-color: $green;
-                            border-color: $green;
-                            transition: 0.3s linear;
-                            }
-                        } 
+                        font-weight: 700;      
+                        text-transform: uppercase;
+                        margin-bottom: 1.6rem;
                     }
-                }
-            }      
+                    .welcome-text{
+                        color:$main-text;
+                        width: 53%;
+                        font-size: 1em;
+                        font-family: "Open Sans";
+                        font-weight: 400;                          
+                    }
+                    .btn-group {
+                        display: flex;
+                        justify-content: flex-start; 
+                        margin-top: 2rem;            
+                        .banner-btn {
+                            text-transform: uppercase; 
+                            color: $white; 
+                            font-family: "Quattrocento Sans";
+                            font-weight: 600;
+                            width: 9em;
+                            height:3em;                                   
+                            margin-right: 1rem;                             
+                            padding: 0.8em 1.3em;                    
+                            border-radius: 5px;
+                            border: 2px solid $white;
+                            font-size: 1em;            
+                            &:hover {
+                                background-color: $green;
+                                border-color: $green;
+                                transition: 0.3s linear;
+                                }
+                            } 
+                        }
+                    }
+                }      
+            }                     
         }
     }
-             
+  
+.swiper-pagination{         
+    .swiper-pagination-bullet{
+        background: transparent;
+        border: 2px solid $white;
+        }
+    .swiper-pagination-bullet-active{
+        background: $white;
+            }
+        }
+.swiper-pagination{
+    .swiper-pagination-clickable{
+        .swiper-pagination-bullets{
+            text-align: right;
+                }
+            }
+        }
+           
+    
+        
     
 .section-modest{
     height: auto;       
