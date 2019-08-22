@@ -21,7 +21,6 @@
   "homepage": "https://github.com/aizadazh/Modest#readme",
   "dependencies": {
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2",
-    "swiper": "^4.5.0"
+    "gulp-sass": "^4.0.2"    
   }
 }

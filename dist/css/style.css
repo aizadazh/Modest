@@ -55,7 +55,7 @@ a {
 @media (min-width: 320px) and (max-width: 480px) {
   .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
     align-items: center;
-    top: 30%;
+    top: 25%;
     left: 0%; }
     .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
       font-size: 1.2em;
