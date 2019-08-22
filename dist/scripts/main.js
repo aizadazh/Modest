@@ -1,25 +1,11 @@
 let menuButton = document.querySelector("#menu-button");
-let drawer = document.querySelector(".nav .drawer");
+let drawer = document.querySelector("nav .drawer");
 let boll = false;
 let backDrop = document.querySelector(".back-drop");
-let carouselSlides = document.querySelectorAll("header ul li");
-let carouselButtons = document.querySelectorAll(".controls button");
-let header = document.querySelector(".section-banner");
 const anchors = document.querySelectorAll('a[href*="#"]');
 const workLinks = document.querySelectorAll('a[href*="?work_"]');
-const links = document.querySelectorAll(".nav-link");
+const links = document.querySelectorAll(".nav-box a");
 
-for (let i = 0; i < carouselButtons.length; i++) {
-  const button = carouselButtons[i];
-  button.addEventListener("click", function() {
-    carouselButtons.forEach(b => (b.className = ""));
-    this.className = "active";
-    for (let index = 0; index < carouselSlides.length; index++) {
-      carouselSlides[index].className = "";
-      carouselSlides[i].className = "active";
-    }
-  });
-}
 
 backDrop.addEventListener("click", function() {
   drawer.style.transform = "translate(-100%)";
@@ -71,50 +57,4 @@ for (const workLink of workLinks) {
   });
 }
 
-let headerStatus = false;
-let index = 0;
 
-header.addEventListener("mousedown", function() {
-  headerStatus = true;
-  console.log(headerStatus);
-});
-document.addEventListener("mouseup", function() {
-  headerStatus = false;
-  console.log(headerStatus);
-});
-header.addEventListener("mousemove", () => {
-  if (index < 4) {
-    index++;
-  } else {
-    index = 0;
-  }
-  if (headerStatus) {
-    for (let i = 0; i < carouselButtons.length; i++) {
-      carouselButtons[i].className = "";
-      carouselButtons[index].className = "active";
-
-      for (let o = 0; o < carouselSlides.length; o++) {
-        carouselSlides[o].className = "";
-        carouselSlides[index].className = "active";
-      }
-    }
-  }
-  headerStatus = false;
-});
-
-var swiper = new Swiper(".swiper-container", {
-  spaceBetween: 30,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
-});

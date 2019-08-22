@@ -4,7 +4,7 @@
     margin: 0;
 }
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 @for $i from 1 through $column_count {
