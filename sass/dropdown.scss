@@ -9,11 +9,10 @@ nav{
 	display: flex;
 	justify-content: center;
     .nav-box{
-		width: 1142px;		
-		height: inherit;
 		display: flex;
 		align-items: center;
-		justify-content: space-between;				
+		justify-content: space-between;
+		width: 1140px;	
 		ul{
 			width: 60%;
 			margin: 0 19px;
@@ -83,9 +82,8 @@ nav{
 	}
 }
 @media (max-width: 950px) {
-	nav{
-		padding: 0 1.5rem;
-		.nav-box{
+	nav{					
+		.nav-box{			
 			ul {
 				display: none;
 			}
@@ -125,9 +123,44 @@ nav{
 			}
 		}
 	}
-		
-
-
+	@media (max-width: 320px) {
+		nav{					
+			.nav-box{
+				width: 84%;
+			}
+		}
+	}
+	@media (max-width: 480px) {
+		nav{					
+			.nav-box{
+				width: 89%;
+			}
+		}
+	}
+	@media (max-width: 576px) {
+		nav{					
+			.nav-box{
+				width: 93%;
+			}
+		}
+	}
+	@media (max-width: 768px) {
+		nav{					
+			.nav-box{
+				width: 93%;
+			}
+		}
+	}
+	
+	@media (max-width: 992px) {
+		nav{					
+			.nav-box{
+				width: 970px;
+			}
+		}
+	}
+	
+	
 
 
 

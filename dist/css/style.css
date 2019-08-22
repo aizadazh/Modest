@@ -53,26 +53,28 @@ a {
     margin-bottom: 2rem; } }
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
-    align-items: center;
-    top: 25%;
-    left: 0%; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
-      font-size: 1.2em;
-      width: 70%;
-      text-align: center; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
-      text-align: center;
-      width: 85%; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group {
-      flex-direction: column; }
-      .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
-        font-weight: 500;
-        font-size: 0.7em;
-        margin-bottom: 1rem;
-        width: 9em;
-        height: 2.8em;
-        padding: 0.7em 1.2em; }
+  .section-banner {
+    height: 70vh; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
+      align-items: center; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
+        font-size: 1.2em;
+        text-align: center;
+        width: 90%; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .welcome-text {
+        text-align: center;
+        width: 90%;
+        font-size: 1em; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
+        flex-direction: column;
+        align-items: center; }
+        .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group .banner-btn {
+          font-weight: 500;
+          font-size: 0.8em;
+          margin-bottom: 1rem;
+          width: 9em;
+          height: 2.8em;
+          padding: 0.7em 1.2em; }
   .section-modest .container .modest-content {
     grid-template-columns: 100%;
     justify-items: center; }
@@ -130,24 +132,25 @@ a {
       padding-top: 2rem; } }
 
 @media (min-width: 481px) and (max-width: 576px) {
-  .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
-    align-items: center;
-    top: 35%;
-    left: 0%; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
-      font-size: 1.4em;
-      width: 80%;
-      text-align: center; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
-      text-align: center;
-      width: 85%; }
-    .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
-      font-weight: 500;
-      font-size: 0.8em;
-      margin-bottom: 1rem;
-      width: 9em;
-      height: 2.8em;
-      padding: 0.7em 1.2em; }
+  .section-banner {
+    height: 70vh; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
+      align-items: center; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
+        font-size: 1.2em;
+        text-align: center;
+        width: 90%; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .welcome-text {
+        text-align: center;
+        width: 90%;
+        font-size: 1em; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group .banner-btn {
+        font-weight: 500;
+        font-size: 0.8em;
+        margin-bottom: 1rem;
+        width: 9em;
+        height: 2.8em;
+        padding: 0.7em 1.2em; }
   .section-modest .container .modest-content {
     grid-template-columns: 100%;
     justify-items: center; }
@@ -296,11 +299,10 @@ nav {
   display: flex;
   justify-content: center; }
   nav .nav-box {
-    width: 1142px;
-    height: inherit;
     display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    width: 1140px; }
     nav .nav-box ul {
       width: 60%;
       margin: 0 19px;
@@ -355,38 +357,56 @@ nav {
     z-index: 10; }
 
 @media (max-width: 950px) {
-  nav {
-    padding: 0 1.5rem; }
-    nav .nav-box ul {
-      display: none; }
-    nav .nav-box #menu-button {
-      display: block; }
-    nav .drawer {
-      display: block;
-      width: 160px;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background: #23b7a4;
+  nav .nav-box ul {
+    display: none; }
+  nav .nav-box #menu-button {
+    display: block; }
+  nav .drawer {
+    display: block;
+    width: 160px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #23b7a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11; }
+    nav .drawer ul {
+      margin: 0;
+      padding: 0;
+      width: 140px;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 11; }
-      nav .drawer ul {
-        margin: 0;
-        padding: 0;
-        width: 140px;
-        display: flex;
-        flex-flow: column;
-        justify-content: center; }
-        nav .drawer ul li {
-          margin: 10px 0; }
-          nav .drawer ul li a {
-            color: #1d2126;
-            text-transform: uppercase;
-            font-size: 0.8em;
-            font-weight: 600; } }
+      flex-flow: column;
+      justify-content: center; }
+      nav .drawer ul li {
+        margin: 10px 0; }
+        nav .drawer ul li a {
+          color: #1d2126;
+          text-transform: uppercase;
+          font-size: 0.8em;
+          font-weight: 600; } }
+
+@media (max-width: 320px) {
+  nav .nav-box {
+    width: 84%; } }
+
+@media (max-width: 480px) {
+  nav .nav-box {
+    width: 89%; } }
+
+@media (max-width: 576px) {
+  nav .nav-box {
+    width: 93%; } }
+
+@media (max-width: 768px) {
+  nav .nav-box {
+    width: 93%; } }
+
+@media (max-width: 992px) {
+  nav .nav-box {
+    width: 970px; } }
 
 * {
   box-sizing: border-box;
@@ -480,7 +500,10 @@ nav {
         top: 35%;
         z-index: 20;
         width: 95%;
-        height: 50%; }
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
         .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
           color: #ffffff;
           font-size: 1.5em;
