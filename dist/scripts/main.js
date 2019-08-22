@@ -1,5 +1,5 @@
 let menuButton = document.querySelector("#menu-button");
-let drawer = document.querySelector("nav .drawer");
+let drawer = document.querySelector(".nav .drawer");
 let boll = false;
 let backDrop = document.querySelector(".back-drop");
 let carouselSlides = document.querySelectorAll("header ul li");
