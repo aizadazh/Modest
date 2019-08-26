@@ -292,83 +292,95 @@
     margin: 3rem auto;  
     .container {
         position: relative;    
-        .section-contact__content {            
+        .contacts {            
             display: flex;                   
-            padding-top: 2rem;                
-            .contact__info{                          
+            flex-flow: wrap; 
+            padding-top: 2rem;              
+            .contact-info{ 
+                width: 50%;
+                min-width: 300px; 
+                .contact-title {                        
+                    color: $h2;    
+                    text-transform: uppercase;
+                    font-family: 'Quattrocento Sans', sans-serif;
+                    }  
                 .contact-text {    
                     color: $text;
                     width: 100%;                   
                     padding-top: 1.5rem;
-                }
-                .contact__title {                        
-                    color: $h2;    
-                    text-transform: uppercase;
-                    font-family: 'Quattrocento Sans', sans-serif;
-                    }                
-                }
-            .form{
-                width:100%;
-                height:auto;
-                background: $white;                
-                margin-top: -10em;
-                padding: 1rem;
-                .form__data{
-                    display: flex;
-                    justify-content: space-between;                    
-                    .name {                       
-                        margin-bottom: 1.5rem;
-                        .form__label {
-                            text-transform: uppercase;
-                            font-family: 'Quattrocento Sans', sans-serif;
-                            display: block;
-                            color: $h2;
-                            margin-bottom: 0.625rem;
-                            font-size: 1rem;
-                            }                        
-                        .form__input {
-                            width: 100%;                           
-                            border: none;
-                            border-radius: 0.2em;
-                            background-color: $bg-contact; 
-                            font-family: 'Quattrocento Sans', sans-serif;                           
-                            height: 2.75rem;                           
-                            font-size: 1.2em;
-                            font-style: italic;
-                            color: $text;
-                            padding-left: 1em;
-                            outline: none;
-                            box-sizing: border-box;
-                        }
-                    }
-                }
-                .form__label {
-                    text-transform: uppercase;
-                    font-family: 'Quattrocento Sans', sans-serif;
-                    display: block;
-                    color: $h2;
-                    margin-bottom: 0.625rem;
-                    font-size: 1rem;
-                    }
-                .textarea {
-                    display: block;
-                    width: 100%;
-                    resize: none;
-                    border: none;
-                    border-radius: 3px;
-                    background-color: $bg-contact;
-                    font-size: 1.2em;                 
-                    font-style: italic;
-                    color: $text;                    
-                    padding-left: 1em;
-                    padding-top: 1em;
-                    font-family: 'Quattrocento Sans', sans-serif;
-                    outline: none;
-                    margin-bottom: 2rem;
-                    box-sizing: border-box;                   
-                    
-                }            
+                }                             
             }
-        }
-    }
-}    
+            .contact-form {
+                min-width: 300px;
+                width: 50%;
+                margin-top: -170px;
+                z-index: 2;
+                background: $white;
+                padding: 30px;
+                box-sizing: border-box;
+                form {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: wrap;
+                    justify-content: space-between; 
+                    .input-group{
+                        display: flex; 
+                        justify-content: space-between; 
+                        width: 100%;                                             
+                        label {
+                            width: calc(50% - 20px);
+                            display: flex;
+                            flex-flow: column;
+                            margin: 0 0 20px;
+                            input {
+                                width: 100%;
+                                height: 2.7em;
+                                border: none;                           
+                                border-radius: 6px;
+                                background: $bg-contact;
+                                box-sizing: border-box;
+                                font-family: 'Quattrocento Sans', sans-serif;
+                                font-size: 1em;
+                                font-style: italic;
+                                padding-left: 1em;
+                        } 
+                    }
+                }                      
+                    .message {
+                        width: 100%;
+                        textarea {
+                        width: 100%;
+                        border: none;
+                        
+                        border-radius: 6px;
+                        background: $bg-contact;
+                        resize: vertical;
+                        max-height: 400px;
+                        min-height: 100px;
+                        box-sizing: border-box;
+                        font-family: 'Quattrocento Sans', sans-serif;
+                        font-size: 1em;
+                        font-style: italic;
+                        padding-left: 1em;
+                        padding-top: 1em;
+                    } 
+                }                       
+                    .submit {
+                        min-width: 150px;
+                        height: 42px;
+                        color: $white;
+                        border: 2px solid $green;
+                        border-radius: 4px;
+                        margin: 20px 0;
+                        outline: none;
+                        background: $green;
+                    }
+                }
+            }
+        }            
+    }    
+}
+
+                  
+                 
+             

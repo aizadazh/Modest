@@ -1,9 +1,4 @@
-@media (min-width:320px) and (max-width: 480px){ 
-    nav{					
-		.nav-box{
-            padding: 0 1.7rem;
-        }
-    }
+@media (min-width:320px) and (max-width: 480px){    
     .section-banner{
         height: 70vh;            
         .swiper-container{
@@ -122,38 +117,34 @@
             }
         }   
     }
-    .section-contact{
-        .container{        
-            .section-contact__content {                              
-                flex-direction: column;                
-                .contact__info{
-                    width: 100%;
-                    margin: 0 auto;                    
-                    text-align: justify; 
-                    margin-bottom: 10em;                  
+    #contact{                 
+        .contacts {
+            flex-direction: column;
+            .contact-info{
+                width: 100%;
+                .contact-text{
+                    text-align: justify;
                 }
-                .form {                    
-                    .form__data{
-                        flex-direction: column;                        
-                    }          
-                }
-            }                
-        }
-    } 
-    #contact{
-        .container{
-            .section-contact__content {
-                .form{
-                    padding: 0;
-                    .form__data{
-                        padding-top: 2rem;
+            }
+            .contact-form{
+                width: 100%;
+                margin-top: 2rem;
+                padding: 0;           
+                form {
+                    .input-group{
+                        flex-direction: column;
+                        label{
+                            width: 100%;
+                        }                      
+                        
                     }
-                    
                 }
-            } 
-        }
-    }      
+                
+            }
+        }     
+    }
 }
+
 @media (min-width:481px) and (max-width: 576px){ 
     nav{					
 		.nav-box{
@@ -275,47 +266,34 @@
             }
         }   
     }
-    .section-contact{
-        .container{        
-            .section-contact__content {                              
-                flex-direction: column;                
-                .contact__info{
-                    width: 100%;
-                    margin: 0 auto;                    
-                    text-align: justify; 
-                    margin-bottom: 10em;                  
+    #contact{                 
+        .contacts {
+            flex-direction: column;
+            .contact-info{
+                width: 100%;
+                .contact-text{
+                    text-align: justify;
                 }
-                .form { 
-                    padding: 0;                   
-                    .form__data{
-                        flex-direction: column;                       
-                    }          
-                }
-            }                
-        }
-    }       
-
-#contact{
-    .container{
-        .section-contact__content {
-            .form{
-                padding: 0;
-                .form__data{
-                    padding-top: 2rem;
+            }
+            .contact-form{
+                width: 100%;
+                margin-top: 2rem;
+                padding: 0;           
+                form {
+                    .input-group{
+                        flex-direction: column;
+                        label{
+                            width: 100%;
+                        }                      
+                        
+                    }
                 }
                 
             }
-        } 
+        }     
     }
 }
-}
-@media (min-width: 577px) and (max-width: 768px){ 
-    nav{					
-		.nav-box{
-            padding-left: 1.5rem;
-            padding-right: 2rem;
-        }
-    } 
+@media (min-width: 577px) and (max-width: 768px){    
     .section-modest{
         .container{
             .modest-content{               
@@ -386,46 +364,35 @@
             }   
         }
     }
-    .section-contact{
-        .container{        
-            .section-contact__content {                              
-                flex-direction: column;
-                align-content: space-between;
-                .contact__info{
-                    width: 100%;
-                    margin: 0 auto;                    
-                    text-align: justify; 
-                    margin-bottom: 10em;                   
+    #contact{                 
+        .contacts {
+            flex-direction: column;
+            .contact-info{
+                width: 100%;
+                .contact-text{
+                    text-align: justify;
                 }
-                .form { 
-                    .form__data{
-                        flex-direction: column;                        
-                    }          
-                }
-            }                
-        }
-    } 
-    #contact{
-        .container{
-            .section-contact__content {
-                .form{
-                    padding: 0;
-                    .form__data{
-                        padding-top: 2rem;
+            }
+            .contact-form{
+                width: 100%;
+                margin-top: 2rem;
+                padding: 0;           
+                form {
+                    .input-group{
+                        flex-direction: column;
+                        label{
+                            width: 100%;
+                        }                      
+                        
                     }
-                    
                 }
-            } 
-        }
-    }      
-}
-@media (min-width: 769px) and (max-width: 992px){ 
-    nav{					
-		.nav-box{
-            padding-left: 1.2rem;
-           
-        }
+                
+            }
+        }     
     }
+}
+
+@media (min-width: 769px) and (max-width: 992px){    
     .section-team{
         .container{
             .section__our-team {               
@@ -466,106 +433,9 @@
             }   
         }
     }
-    .section-contact{
-        .container{        
-            .section-contact__content {                 
-                .contact__info{
-                    width: 95%;                                      
-                    text-align: justify; 
-                    .contact-text{
-                        width: 90%;
-                        font-size: 1em;
-                    }                                      
-                }
-                .form { 
-                    .form__data{
-                        flex-direction: column;                        
-                    }          
-                }
-            }                
-        }
-    }
-    #contact{
-        .container{
-            .section-contact__content {                 
-                .contact__info{
-                    .contact-text{
-                        width: 90%;
-                    }
-                }
-            }
-        }
-    }       
 }
-@media (min-width:993px) and (max-width: 1029px){ 
-    nav{					
-		.nav-box{
-            padding-left: 1.5rem;
-           
-        }
-    }   
-    #contact{ 
-        .container{            
-            .section-contact__content {               
-                .form { 
-                    .form__data{                        
-                        .name{
-                            .form__input{
-                                font-size: 1em;
-                        }
-                    }          
-                }
-            }                
-    }
-}
-} 
-} 
-@media (min-width:1030px) and (max-width: 1070px){ 
-    nav{					
-		.nav-box{
-            padding-left: 2.5rem;
-           
-        }
-    }   
-    #contact{ 
-        .container{            
-            .section-contact__content {               
-                .form { 
-                    .form__data{                        
-                        .name{
-                            .form__input{
-                                font-size: 1em;
-                        }
-                    }          
-                }
-            }                
-    }
-}
-} 
-}   
-@media (min-width:1071px) and (max-width: 1199px){ 
-    nav{					
-		.nav-box{
-            padding-left: 6em;
-           
-        }
-    }   
-    #contact{ 
-        .container{            
-            .section-contact__content {               
-                .form { 
-                    .form__data{                        
-                        .name{
-                            .form__input{
-                                font-size: 1em;
-                        }
-                    }          
-                }
-            }                
-    }
-}
-} 
-}   
+  
+  
 
      
 
