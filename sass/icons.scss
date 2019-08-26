@@ -94,78 +94,27 @@
         }
       
     }
-    @media (min-width: 577px) and (max-width: 992px){
+    @media (min-width: 577px) and (max-width: 768px){
         .social-media{
             display: flex;    
             justify-content: flex-start;            
             margin-top: 3rem;
             margin-bottom: 3rem;   
-            .social-media__icon {        
-                width: 4em;
-                height: 4em;        
-                position: relative;
-                background: $bg-icons;
-                margin-right: 0.2em;                                 
-                .social-media__link{         
-                    position: absolute;
-                    margin-left: 35%; 
-                    transform: translateX(-50%);  
-                    margin-top: 50%; 
-                    transform: translateY(-50%);           
-                    } 
-                .social-media__linkf{         
-                    position: absolute;
-                    margin-left: 40%; 
-                    transform: translateX(-50%);  
-                    margin-top: 50%; 
-                    transform: translateY(-50%);           
-                    }  
-                .social-media__linkd{         
-                    position: absolute;
-                    margin-left: 30%; 
-                    transform: translateX(-50%);  
-                    margin-top: 50%; 
-                    transform: translateY(-50%);           
-                    }            
-                }
-            }
         }
-        @media (min-width: 992px) and (max-width: 1280px){
+    }
+        @media (min-width: 769px) and (max-width: 992px){
             .social-media{
                 display: flex;    
                 justify-content: flex-start; 
-                margin-top: -5rem;    
-                .social-media__icon {        
-                    width: 4em;
-                    height: 4em;        
-                    position: relative;
-                    background: $bg-icons;
-                    margin-right: 0.2em; 
-                    cursor: pointer; 
-                    &:hover{
-                        background: darken($color:$bg-icons, $amount:50)
-                    }                 
-                    .social-media__link{         
-                        position: absolute;
-                        margin-left: 35%; 
-                        transform: translateX(-50%);  
-                        margin-top: 50%; 
-                        transform: translateY(-50%);           
-                        } 
-                    .social-media__linkf{         
-                        position: absolute;
-                        margin-left: 40%; 
-                        transform: translateX(-50%);  
-                        margin-top: 50%; 
-                        transform: translateY(-50%);           
-                        }  
-                    .social-media__linkd{         
-                        position: absolute;
-                        margin-left: 30%; 
-                        transform: translateX(-50%);  
-                        margin-top: 50%; 
-                        transform: translateY(-50%);           
-                        }            
-                    }
-                }
+                margin-top: -7rem; 
+                margin-bottom: 3rem;   
             }
+        }
+        @media (min-width: 993px) and (max-width: 1200px){
+            .social-media{
+                display: flex;    
+                justify-content: flex-start; 
+                margin-top: -7rem; 
+                margin-bottom: 3rem;   
+            }
+        }

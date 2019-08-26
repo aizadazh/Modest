@@ -429,7 +429,8 @@
                     padding-bottom: 5%;
                 }                 
             }
-        }                
+        } 
+                    
     .section-team{
         .container{
             .section__our-team {               
@@ -494,6 +495,19 @@
         }
     }
 }
+.section-modest{
+    .container{
+        .modest-content{              
+            
+            .section-modest__right-block{      
+                margin-bottom: 3rem;                            
+                        }
+                    }
+                }
+            }
+        
+    
+
 @media (min-width: 1200px) and (max-width: 1500px){
     .section-banner{ 
         height: 100vh;                  

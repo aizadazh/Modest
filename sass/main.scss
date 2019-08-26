@@ -16,8 +16,7 @@
                 .banner-content{
                     display: flex;
                     flex-direction: column;
-                    padding-top: 7em;
-                    padding-bottom: 7em;                                                                       
+                    padding-top:10em;                                                                                         
                     .display1 {
                         color: $white;          
                         font-size: 1.5em;
@@ -66,8 +65,7 @@
                 background: $white;
             } 
         }
-        }
-                      
+    }                      
        
 .section-modest{
     height: auto;       
