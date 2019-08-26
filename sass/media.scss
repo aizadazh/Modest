@@ -1,26 +1,26 @@
 @media (min-width:320px) and (max-width: 480px){    
-    .section-banner{
-        height: 70vh;            
+    .section-banner{ 
+        height: 100vh;                  
         .swiper-container{
             .swiper-wrapper{
                 .swiper-slide{                    
                     .container{                               
                         .banner-content{
-                            align-items: center;
-                            left: 2%;                                       
+                            align-items: center;                                                                                                              
                             .display1 {                                   
                                 font-size: 1.2em;                                
-                                text-align: center; 
-                                width: 90%;                          
-                            }
-                            .welcome-text{                  
                                 text-align: center;
                                 width: 90%;
-                                font-size: 1em;                                                                                                     
+                                                    
+                            }
+                            .welcome-text{                  
+                                text-align: center;                               
+                                font-size: 1.2em; 
+                                width: 100%;                                                                                                    
                             }
                             .btn-group{
-                                flex-direction: column;
-                                align-items: center;                                 
+                                flex-direction: column;  
+                                align-items: center;                                                            
                                 .banner-btn {                        
                                     font-weight: 500;                      
                                     font-size: 0.8em; 
@@ -33,10 +33,9 @@
                             }
                         }
                     }
-                }
+                }                 
             }
-        }
-            
+        }          
     .section-modest{
         .container{
             .modest-content{               
@@ -145,40 +144,65 @@
     }
 }
 
-@media (min-width:481px) and (max-width: 576px){ 
-    nav{					
-		.nav-box{
-            padding-left: 1.2rem;
-            padding-right: 2.5rem;
-        }
-    }   
-    .section-banner{
-        height: 70vh;            
+@media (min-width:481px) and (max-width: 576px){     
+    .section-banner{ 
+        height: 100vh;                  
         .swiper-container{
             .swiper-wrapper{
                 .swiper-slide{                    
                     .container{                               
                         .banner-content{
-                            align-items: center; 
-                            left: 2%;                                    
+                            align-items: center;                                                                                                              
                             .display1 {                                   
                                 font-size: 1.2em;                                
-                                text-align: center; 
-                                width: 90%;                          
-                            }
-                            .welcome-text{                  
                                 text-align: center;
                                 width: 90%;
-                                font-size: 1em;                                                                                                     
+                                                    
                             }
-                        .btn-group{                                                           
-                            .banner-btn {                        
-                                font-weight: 500;                      
-                                font-size: 0.8em; 
-                                margin-bottom: 1rem; 
-                                width: 9em;
-                                height:2.8em; 
-                                padding: 0.7em 1.2em;                                
+                            .welcome-text{                  
+                                text-align: center;                               
+                                font-size: 1.2em; 
+                                width: 100%;                                                                                                    
+                            }
+                            .btn-group{  
+                                width: 55%;                                                                                         
+                                .banner-btn {                        
+                                    font-weight: 500;                      
+                                    font-size: 0.8em; 
+                                    margin-bottom: 1rem; 
+                                    width: 9em;
+                                    height:2.8em; 
+                                    padding: 0.7em 1.2em;                                
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }                 
+            }
+        }          
+        .section-modest{
+            .container{
+                .modest-content{               
+                    grid-template-columns: 100%;
+                    .section-modest__left-block{                   
+                        text-align: justify;
+                        margin-bottom: 2rem;
+                        font-size:1em;                   
+                        width: 100%;              
+                        }   
+                    .section-modest__right-block{      
+                        grid-template-rows: auto auto auto;  
+                        .right-block-main {                              
+                            grid-template-columns: 10% 90%;                                                                          
+                            .right-block-element{                                   
+                                width: 3.5em;
+                                height: 3.5em;                              
+                            }
+                            .right-block-text{
+                                .right-block__text{
+                                    text-align: justify;
+                                    font-size:1em;                                 
                                 }
                             }
                         }
@@ -186,37 +210,6 @@
                 }
             }
         }
-    }    
-    .section-modest{
-        .container{
-            .modest-content{               
-                grid-template-columns: 100%;
-                justify-items: center;                
-                .section-modest__left-block{                   
-                    text-align: justify;
-                    margin-bottom: 2rem;
-                    font-size:0.9em;                             
-                    }   
-                .section-modest__right-block{      
-                    grid-template-rows: auto auto auto;                     
-                    .right-block-main {                              
-                        grid-template-columns: 10% 80%; 
-                                                                                                
-                        .right-block-element{                                   
-                            width: 2.5em;
-                            height: 2.5em;                              
-                        }
-                        .right-block-text{
-                            .right-block__text{                                
-                                text-align: justify;
-                                font-size:0.9em;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
     .section-team{                      
         .container{
             .section__our-team {                
@@ -293,11 +286,34 @@
         }     
     }
 }
-@media (min-width: 577px) and (max-width: 768px){    
+@media (min-width: 577px) and (max-width: 768px){ 
+    .section-banner{ 
+        height: 100vh;                  
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{                    
+                    .container{                               
+                        .banner-content{                                                                                                                                        
+                            .display1 {                                   
+                                font-size: 1.5m;                                               
+                            }
+                            .welcome-text{                                                              
+                                font-size: 1.4em; 
+                                width: 80%;                                                                                                    
+                            }
+                            .btn-group{  
+                                width: 58%;                       
+                                }
+                            }
+                        }
+                    }
+                }                 
+            }
+        }             
     .section-modest{
         .container{
             .modest-content{               
-                grid-template-columns: 98%;
+                grid-template-columns: 100%;
                 .section-modest__left-block{                   
                     text-align: justify;
                     margin-bottom: 2rem;
@@ -392,7 +408,28 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 992px){    
+@media (min-width: 769px) and (max-width: 992px){ 
+    .section-banner{ 
+        height: 100vh;                  
+        .swiper-container{
+            .swiper-wrapper{
+                .swiper-slide{                    
+                    .container{                               
+                        .banner-content{                    
+                            .btn-group{  
+                                width: 45%;                       
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination{
+                    text-align: right;
+                    padding-right:5%;
+                    padding-bottom: 5%;
+                }                 
+            }
+        }                
     .section-team{
         .container{
             .section__our-team {               
@@ -434,7 +471,42 @@
         }
     }
 }
-  
+@media (min-width: 993px) and (max-width: 1199px){ 
+.section-banner{ 
+    height: 100vh;                  
+    .swiper-container{
+        .swiper-wrapper{
+            .swiper-slide{                    
+                .container{                               
+                    .banner-content{                    
+                        .btn-group{  
+                            width: 35%;                       
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-pagination{
+                text-align: right;
+                padding-right:5%;
+                padding-bottom: 5%;
+            }                 
+        }
+    }
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+    .section-banner{ 
+        height: 100vh;                  
+        .swiper-container{            
+            .swiper-pagination{
+                text-align: right;
+                padding-right:5%;
+                padding-bottom: 5%;
+            }                 
+        }
+    }
+} 
+
   
 
      

@@ -54,18 +54,17 @@ a {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .section-banner {
-    height: 70vh; }
+    height: 100vh; }
     .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
-      align-items: center;
-      left: 2%; }
+      align-items: center; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
         font-size: 1.2em;
         text-align: center;
         width: 90%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .welcome-text {
         text-align: center;
-        width: 90%;
-        font-size: 1em; }
+        font-size: 1.2em;
+        width: 100%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
         flex-direction: column;
         align-items: center; }
@@ -134,46 +133,44 @@ a {
           width: 100%; } }
 
 @media (min-width: 481px) and (max-width: 576px) {
-  nav .nav-box {
-    padding-left: 1.2rem;
-    padding-right: 2.5rem; }
   .section-banner {
-    height: 70vh; }
+    height: 100vh; }
     .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content {
-      align-items: center;
-      left: 2%; }
+      align-items: center; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
         font-size: 1.2em;
         text-align: center;
         width: 90%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .welcome-text {
         text-align: center;
-        width: 90%;
-        font-size: 1em; }
-      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group .banner-btn {
-        font-weight: 500;
-        font-size: 0.8em;
-        margin-bottom: 1rem;
-        width: 9em;
-        height: 2.8em;
-        padding: 0.7em 1.2em; }
+        font-size: 1.2em;
+        width: 100%; }
+      .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
+        width: 55%; }
+        .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group .banner-btn {
+          font-weight: 500;
+          font-size: 0.8em;
+          margin-bottom: 1rem;
+          width: 9em;
+          height: 2.8em;
+          padding: 0.7em 1.2em; }
   .section-modest .container .modest-content {
-    grid-template-columns: 100%;
-    justify-items: center; }
+    grid-template-columns: 100%; }
     .section-modest .container .modest-content .section-modest__left-block {
       text-align: justify;
       margin-bottom: 2rem;
-      font-size: 0.9em; }
+      font-size: 1em;
+      width: 100%; }
     .section-modest .container .modest-content .section-modest__right-block {
       grid-template-rows: auto auto auto; }
       .section-modest .container .modest-content .section-modest__right-block .right-block-main {
-        grid-template-columns: 10% 80%; }
+        grid-template-columns: 10% 90%; }
         .section-modest .container .modest-content .section-modest__right-block .right-block-main .right-block-element {
-          width: 2.5em;
-          height: 2.5em; }
+          width: 3.5em;
+          height: 3.5em; }
         .section-modest .container .modest-content .section-modest__right-block .right-block-main .right-block-text .right-block__text {
           text-align: justify;
-          font-size: 0.9em; }
+          font-size: 1em; }
   .section-team .container .section__our-team {
     grid-template-columns: 1fr;
     justify-items: center; }
@@ -214,8 +211,17 @@ a {
           width: 100%; } }
 
 @media (min-width: 577px) and (max-width: 768px) {
+  .section-banner {
+    height: 100vh; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .display1 {
+      font-size: 1.5m; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .welcome-text {
+      font-size: 1.4em;
+      width: 80%; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
+      width: 58%; }
   .section-modest .container .modest-content {
-    grid-template-columns: 98%; }
+    grid-template-columns: 100%; }
     .section-modest .container .modest-content .section-modest__left-block {
       text-align: justify;
       margin-bottom: 2rem;
@@ -263,6 +269,14 @@ a {
           width: 100%; } }
 
 @media (min-width: 769px) and (max-width: 992px) {
+  .section-banner {
+    height: 100vh; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
+      width: 45%; }
+    .section-banner .swiper-container .swiper-pagination {
+      text-align: right;
+      padding-right: 5%;
+      padding-bottom: 5%; }
   .section-team .container .section__our-team {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center; }
@@ -278,6 +292,24 @@ a {
     grid-gap: 1.5rem; }
     .section-features .container .section-features__main .feature-item .text-feature {
       width: 100%; } }
+
+@media (min-width: 993px) and (max-width: 1199px) {
+  .section-banner {
+    height: 100vh; }
+    .section-banner .swiper-container .swiper-wrapper .swiper-slide .container .banner-content .btn-group {
+      width: 35%; }
+    .section-banner .swiper-container .swiper-pagination {
+      text-align: right;
+      padding-right: 5%;
+      padding-bottom: 5%; } }
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .section-banner {
+    height: 100vh; }
+    .section-banner .swiper-container .swiper-pagination {
+      text-align: right;
+      padding-right: 5%;
+      padding-bottom: 5%; } }
 
 header {
   width: 100%;
@@ -375,7 +407,8 @@ header {
             color: #1d2126;
             text-transform: uppercase;
             font-size: 0.8em;
-            font-weight: 600; } }
+            font-weight: 600;
+            padding-right: 5rem; } }
 
 * {
   box-sizing: border-box;
@@ -465,14 +498,10 @@ header {
       background-size: cover;
       height: 100%; }
       .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content {
-        position: absolute;
-        top: 35%;
-        z-index: 20;
-        width: 95%;
-        height: 50%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start; }
+        padding-top: 7em;
+        padding-bottom: 7em; }
         .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .display1 {
           color: #ffffff;
           font-size: 1.5em;
@@ -482,13 +511,14 @@ header {
           margin-bottom: 1.6rem; }
         .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .welcome-text {
           color: #dcdfe1;
-          width: 53%;
+          width: 65%;
           font-size: 1em;
           font-family: "Open Sans";
           font-weight: 400; }
         .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group {
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-between;
+          width: 27%;
           margin-top: 2rem; }
           .section-banner .swiper-container .swiper-wrapper .swiper-slide .banner-content .btn-group .banner-btn {
             text-transform: uppercase;
@@ -497,7 +527,6 @@ header {
             font-weight: 600;
             width: 9em;
             height: 3em;
-            margin-right: 1rem;
             padding: 0.8em 1.3em;
             border-radius: 5px;
             border: 2px solid #ffffff;
@@ -506,6 +535,10 @@ header {
               background-color: #23b7a4;
               border-color: #23b7a4;
               transition: 0.3s linear; }
+    .section-banner .swiper-container .swiper-pagination-bullet {
+      border: 2px solid white; }
+    .section-banner .swiper-container .swiper-pagination-bullet-active {
+      background: #ffffff; }
 
 .section-modest {
   height: auto;
@@ -731,7 +764,9 @@ header {
               width: calc(50% - 20px);
               display: flex;
               flex-flow: column;
-              margin: 0 0 20px; }
+              margin: 0 0 20px;
+              color: #8d8f92;
+              text-transform: uppercase; }
               .section-contact .container .contacts .contact-form form .input-group label input {
                 width: 100%;
                 height: 2.7em;
@@ -744,7 +779,9 @@ header {
                 font-style: italic;
                 padding-left: 1em; }
           .section-contact .container .contacts .contact-form form .message {
-            width: 100%; }
+            width: 100%;
+            color: #8d8f92;
+            text-transform: uppercase; }
             .section-contact .container .contacts .contact-form form .message textarea {
               width: 100%;
               border: none;

@@ -7,17 +7,6 @@ const workLinks = document.querySelectorAll('a[href*="?work_"]');
 const links = document.querySelectorAll(".nav-box a");
 
 
-$( document ).ready(function() {
-  
-  var mySwiper = new Swiper ('.swiper-container', {            
-    spaceBetween: 30,
-    autoplay: 2000,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-  })
-});
 backDrop.addEventListener("click", function() {
   drawer.style.transform = "translate(-100%)";
   backDrop.style.display = "none";
@@ -67,6 +56,7 @@ for (const workLink of workLinks) {
     event.preventDefault();
   });
 }
+
 
 
 
