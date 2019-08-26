@@ -316,7 +316,7 @@
                 grid-template-columns: 100%;
                 .section-modest__left-block{                   
                     text-align: justify;
-                    margin-bottom: 2rem;
+                    margin-bottom: 1rem;
                     font-size:1em;                   
                     width: 100%;              
                     }   
@@ -489,7 +489,7 @@
             }
             .swiper-pagination{
                 text-align: right;
-                padding-right:5%;
+                padding-right:10%;
                 padding-bottom: 5%;
             }                 
         }
@@ -497,15 +497,13 @@
 }
 .section-modest{
     .container{
-        .modest-content{              
-            
+        .modest-content{    
             .section-modest__right-block{      
                 margin-bottom: 3rem;                            
                         }
                     }
                 }
-            }
-        
+            } 
     
 
 @media (min-width: 1200px) and (max-width: 1500px){

@@ -1,7 +1,7 @@
 .section-banner{ 
     background-color: $banner-bg;
 	width: 100%;
-    height: 100vh; 
+    height: 100%; 
     .swiper-container{
         width: 100%;
         height: 100%;
@@ -16,7 +16,8 @@
                 .banner-content{
                     display: flex;
                     flex-direction: column;
-                    padding-top:10em;                                                                                         
+                    padding-top:10em; 
+                    padding-bottom: 10em;                                                                                        
                     .display1 {
                         color: $white;          
                         font-size: 1.5em;
@@ -44,7 +45,7 @@
                             font-weight: 600;
                             width: 9em;
                             height:3em;                                                         
-                            padding: 0.8em 1.3em;                    
+                            padding: 0.9em 1.5em;                    
                             border-radius: 5px;
                             border: 2px solid $white;
                             font-size: 1em;            
@@ -59,10 +60,15 @@
                 }      
             } 
             .swiper-pagination-bullet{
-                border: 2px solid white;
+                border: 2px solid $white;
+                width: 1em;
+                height: 1em;
+
             } 
             .swiper-pagination-bullet-active{
                 background: $white;
+                width: 1em;
+                height: 1em;
             } 
         }
     }                      
@@ -72,11 +78,16 @@
     margin-top: 3rem;  
     .modest-content{
         display: grid;
-        grid-template-columns: 60% 40%;    
+        grid-template-columns: 55% 45%;    
         .section-modest__left-block{                                 
-            width: 92%;
-            font-size: 0.95em;                
-            font-family: 'Open Sans', sans-serif;             
+            width: 653px;
+            height: 235px;
+            font-size: 16px;
+            line-height: 26px;
+            color: $text;
+            font-family: "Open Sans";
+            font-weight: 400;
+            width: 95%;            
             }         
         .section-modest__right-block{                               
             display: grid;

@@ -1,8 +1,8 @@
 .social-media{
     display: flex;    
     justify-content: flex-start; 
-    margin-top: -2rem; 
-    margin-bottom: 3rem;      
+    margin-top: -4rem; 
+    margin-bottom: 3.5rem;      
     .social-media__icon {        
         width: 4em;
         height: 4em;        
@@ -39,7 +39,7 @@
 @media (min-width:320px) and (max-width: 576px){ 
     .social-media{ 
         justify-content: center; 
-        margin-top: 2rem;
+        margin-top: 0.5rem;
         margin-bottom: 3rem;       
         .social-media__icon {        
             width: 2.8em;
@@ -98,7 +98,7 @@
         .social-media{
             display: flex;    
             justify-content: flex-start;            
-            margin-top: 3rem;
+            margin-top: 0.5rem;
             margin-bottom: 3rem;   
         }
     }
